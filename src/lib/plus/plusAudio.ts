@@ -69,25 +69,33 @@ const POLICY: Record<TaskType, Record<string, FieldRule>> = {
   wfd: { sentence: { phase: "post", nativeAudio: true } },
 };
 
-/** Política do campo na fase — all-false quando o campo não existe na fase. */
+/** Política do campo na fase — all-false quando o campo não existe na fase.
+ *  Campos de array usam índice: "turns[0]", "paragraphs[2]" → base "turns". */
 export function plusFieldPolicy(
   type: TaskType,
   field: string,
   phase: PlusPhase,
 ): PlusFieldPolicy {
-  const rule = POLICY[type]?.[field];
+  const rule = POLICY[type]?.[baseField(field)];
   if (!rule || rule.phase !== phase) return { phraseTranslation: false, phraseAudio: false };
   return { phraseTranslation: true, phraseAudio: !rule.nativeAudio };
 }
 
 /** true se o campo existe na matriz para a fase (habilita bolha de palavra). */
 export function plusWordPolicy(type: TaskType, field: string, phase: PlusPhase): boolean {
-  const rule = POLICY[type]?.[field];
+  const rule = POLICY[type]?.[baseField(field)];
   return rule !== undefined && rule.phase === phase;
 }
 
+/** "turns[3]" → "turns" (o índice identifica o item, não muda a política). */
+function baseField(field: string): string {
+  return field.replace(/\[\d+\]$/, "");
+}
+
 /** Campos elegíveis por tipo (para os pipelines de extração). */
-export function eligibleFields(type: TaskType): { field: string; phase: PlusPhase; nativeAudio: boolean }[] {
+export function eligibleFields(
+  type: TaskType,
+): { field: string; phase: PlusPhase; nativeAudio: boolean }[] {
   return Object.entries(POLICY[type] ?? {}).map(([field, rule]) => ({
     field,
     phase: rule.phase,
