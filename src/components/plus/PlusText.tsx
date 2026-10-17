@@ -17,6 +17,7 @@ export function PlusText({
   phase,
   className,
   wordBubbles = true,
+  disabled = false,
 }: {
   text: string;
   type: TaskType;
@@ -24,10 +25,14 @@ export function PlusText({
   phase: PlusPhase;
   className?: string;
   wordBubbles?: boolean | undefined;
+  /** no simulado o pack não aparece (não faz parte da replicação do PTE) */
+  disabled?: boolean | undefined;
 }) {
   const { settings } = useAppState();
-  const policy = plusFieldPolicy(type, field, phase);
-  const wordOk = plusWordPolicy(type, field, phase);
+  const policy = disabled
+    ? { phraseTranslation: false, phraseAudio: false }
+    : plusFieldPolicy(type, field, phase);
+  const wordOk = !disabled && plusWordPolicy(type, field, phase);
 
   if (!policy.phraseTranslation && !policy.phraseAudio) {
     return wordBubbles ? (

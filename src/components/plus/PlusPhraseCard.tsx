@@ -33,6 +33,7 @@ export function PlusPhraseCard({
   field,
   phase,
   wordBubbles = true,
+  disabled = false,
 }: {
   sentence: string;
   index: number;
@@ -41,10 +42,14 @@ export function PlusPhraseCard({
   phase: PlusPhase;
   /** bolhas de palavra dentro da linha (toque na palavra tem prioridade) */
   wordBubbles?: boolean | undefined;
+  /** no simulado o pack não aparece (não faz parte da replicação do PTE) */
+  disabled?: boolean | undefined;
 }) {
   const { settings } = useAppState();
   const qid = useContext(PlusQuestionContext) ?? "";
-  const policy = plusFieldPolicy(type, field, phase);
+  const policy = disabled
+    ? { phraseTranslation: false, phraseAudio: false }
+    : plusFieldPolicy(type, field, phase);
   const [expanded, setExpanded] = useState(false);
   const [lookup, setLookup] = useState<{ literal: string; contextual: string } | null | undefined>(
     undefined,
