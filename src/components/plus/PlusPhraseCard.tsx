@@ -34,6 +34,7 @@ export function PlusPhraseCard({
   phase,
   wordBubbles = true,
   disabled = false,
+  qid: qidProp,
 }: {
   sentence: string;
   index: number;
@@ -44,9 +45,12 @@ export function PlusPhraseCard({
   wordBubbles?: boolean | undefined;
   /** no simulado o pack não aparece (não faz parte da replicação do PTE) */
   disabled?: boolean | undefined;
+  /** qid direto (motores que não usam PlusQuestionProvider) */
+  qid?: string | undefined;
 }) {
   const { settings } = useAppState();
-  const qid = useContext(PlusQuestionContext) ?? "";
+  const qidFromContext = useContext(PlusQuestionContext);
+  const qid = qidProp ?? qidFromContext ?? "";
   const policy = disabled
     ? { phraseTranslation: false, phraseAudio: false }
     : plusFieldPolicy(type, field, phase);

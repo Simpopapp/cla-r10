@@ -18,6 +18,7 @@ export function PlusText({
   className,
   wordBubbles = true,
   disabled = false,
+  qid,
 }: {
   text: string;
   type: TaskType;
@@ -27,6 +28,8 @@ export function PlusText({
   wordBubbles?: boolean | undefined;
   /** no simulado o pack não aparece (não faz parte da replicação do PTE) */
   disabled?: boolean | undefined;
+  /** qid direto — obrigatório quando o campo tem tradução por frase */
+  qid?: string | undefined;
 }) {
   const { settings } = useAppState();
   const policy = disabled
