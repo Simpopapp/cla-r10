@@ -48,7 +48,6 @@ describe("plus surfaces", () => {
     expect(screen.queryByRole("button", { name: /pronunciar/i })).toBeNull();
   });
 
-
   it("balão fecha por toque fora e Esc", async () => {
     mockSettings.current.plus.wordTranslation = true;
     render(<PlusWordText text="The ability" type="write_essay" field="sample" phase="post" />);
