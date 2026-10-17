@@ -12,10 +12,11 @@ import manifestJson from "@/data/pte/manifest.json";
 
 import glossaryJson from "@/data/plus/glossary.json";
 import writeEssayPhrases from "@/data/plus/phrases/write_essay.json";
-import sstPhrases from "@/data/plus/phrases/sst.json";
+import swtPhrases from "@/data/plus/phrases/swt.json";
 import answerShortPhrases from "@/data/plus/phrases/answer_short.json";
 import writeEssayBank from "@/data/pte/write_essay.json";
-import sstBank from "@/data/pte/sst.json";
+import swtBank from "@/data/pte/swt.json";
+
 
 
 type PhrasesFile = Record<string, Record<string, { h: string; l: string; c: string }[]>>;
@@ -46,7 +47,8 @@ describe("plus data integrity", () => {
 
   it.each([
     ["write_essay", writeEssayPhrases as PhrasesFile, writeEssayBank as unknown as BankItem[]],
-    ["sst", sstPhrases as PhrasesFile, sstBank as unknown as BankItem[]],
+    ["swt", swtPhrases as PhrasesFile, swtBank as unknown as BankItem[]],
+
   ])("%s: frases apontam para o banco e hashes batem", (type, phrases, bank) => {
     const bankById = new Map(bank.map((q) => [q.id, q]));
     const eligible = new Set(eligibleFields(type as TaskType).map((f) => f.field));
