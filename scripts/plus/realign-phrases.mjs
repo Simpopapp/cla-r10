@@ -77,16 +77,12 @@ for (const type of TYPES) {
       for (const sentence of sentences) {
         const entry = byHash.get(hashSentence(sentence));
         if (entry) { aligned.push(entry); kept++; }
-        else { dropped++; aligned.push(undefined); }
+        else { dropped++; aligned.push(null); }
       }
-      // buracos invalidam o array — mantém o campo só se completo
-      if (aligned.some((e) => e === undefined)) {
-        const complete = aligned.filter((e) => e !== undefined);
-        console.log(`${type}/${qid}/${field}: ${complete.length} mantidas, ${aligned.length - complete.length} descartadas (frases sem tradução — campo fica fora)`);
-        continue;
-      }
+      // buracos viram null — lookupPhrase devolve "Tradução não disponível"
       out[qid] ??= {};
       out[qid][field] = aligned;
+
     }
   }
   const sorted = Object.fromEntries(Object.entries(out).sort(([a], [b]) => a.localeCompare(b)));
