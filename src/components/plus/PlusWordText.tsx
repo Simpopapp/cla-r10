@@ -32,15 +32,19 @@ export function PlusWordText({
   field,
   phase,
   className,
+  disabled = false,
 }: {
   text: string;
   type: TaskType;
   field: string;
   phase: PlusPhase;
   className?: string;
+  /** no simulado o pack não aparece (não faz parte da replicação do PTE) */
+  disabled?: boolean | undefined;
 }) {
   const { settings } = useAppState();
   const active =
+    !disabled &&
     plusWordPolicy(type, field, phase) &&
     (settings.plus.wordTranslation || settings.plus.plusAudio);
 

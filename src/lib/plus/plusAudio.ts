@@ -26,13 +26,15 @@ interface FieldRule {
 // ficam fora do pack por decisão registrada: fragmentos curtos, cobertos pelo
 // glossário quando renderizados com PlusWordText).
 const POLICY: Record<TaskType, Record<string, FieldRule>> = {
-  read_aloud: { text: { phase: "pre", nativeAudio: false } },
+  // read_aloud/rts: o app oferece o modelo TTS do texto completo (mesma
+  // granularidade) → sem áudio de frase; lst_fib: o template é tocado em áudio.
+  read_aloud: { text: { phase: "pre", nativeAudio: true } },
   repeat_sentence: { transcript: { phase: "post", nativeAudio: true } },
   describe_image: { facts: { phase: "pre", nativeAudio: false } },
   retell_lecture: { transcript: { phase: "post", nativeAudio: true } },
   answer_short: { question: { phase: "pre", nativeAudio: true }, answers: { phase: "post", nativeAudio: false } },
   sgd: { turns: { phase: "pre", nativeAudio: true }, sample: { phase: "post", nativeAudio: false } },
-  rts: { scenario: { phase: "pre", nativeAudio: false }, sample: { phase: "post", nativeAudio: false } },
+  rts: { scenario: { phase: "pre", nativeAudio: true }, sample: { phase: "post", nativeAudio: false } },
   swt: { text: { phase: "pre", nativeAudio: false }, sample: { phase: "post", nativeAudio: false } },
   write_essay: { prompt: { phase: "pre", nativeAudio: false }, sample: { phase: "post", nativeAudio: false } },
   read_fib_dropdown: { passage: { phase: "pre", nativeAudio: false } },
@@ -53,7 +55,7 @@ const POLICY: Record<TaskType, Record<string, FieldRule>> = {
     transcript: { phase: "post", nativeAudio: true },
     explanation: { phase: "post", nativeAudio: false },
   },
-  lst_fib: { template: { phase: "pre", nativeAudio: false } },
+  lst_fib: { template: { phase: "pre", nativeAudio: true } },
   lst_hcs: {
     transcript: { phase: "post", nativeAudio: true },
     explanation: { phase: "post", nativeAudio: false },
