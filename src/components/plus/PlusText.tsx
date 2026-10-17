@@ -68,6 +68,7 @@ export function PlusText({
               phase={phase}
               wordBubbles={wordBubbles && wordOk}
               disabled={disabled}
+              qid={qid}
             />{" "}
           </span>
         );
