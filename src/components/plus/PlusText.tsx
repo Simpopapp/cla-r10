@@ -36,7 +36,14 @@ export function PlusText({
 
   if (!policy.phraseTranslation && !policy.phraseAudio) {
     return wordBubbles ? (
-      <PlusWordText text={text} type={type} field={field} phase={phase} className={className} />
+      <PlusWordText
+        text={text}
+        type={type}
+        field={field}
+        phase={phase}
+        className={className}
+        disabled={disabled}
+      />
     ) : (
       <span className={className}>{text}</span>
     );
@@ -57,6 +64,7 @@ export function PlusText({
               field={field}
               phase={phase}
               wordBubbles={wordBubbles && wordOk}
+              disabled={disabled}
             />{" "}
           </span>
         );
