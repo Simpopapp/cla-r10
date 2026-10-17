@@ -5,6 +5,8 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
 import { AudioPlayOnce } from "./AudioPlayOnce";
+import { PlusText } from "@/components/plus/PlusText";
+import { plusEnabled } from "@/lib/plus/settings";
 import type { EngineProps } from "./engine";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -12,7 +14,7 @@ import { useAppState } from "@/lib/useAppState";
 import { gradeDictation, type DictationResult } from "@/lib/pte/dictation";
 import type { WfdData } from "@/lib/pte/types";
 
-export function WfdEngine({ question, onSubmit, submitted, registerAutoSubmit }: EngineProps) {
+export function WfdEngine({ question, onSubmit, submitted, registerAutoSubmit, mode = "practice" }: EngineProps) {
   const data = question.data as WfdData;
   const { settings } = useAppState();
   const [answer, setAnswer] = useState("");
@@ -93,6 +95,11 @@ export function WfdEngine({ question, onSubmit, submitted, registerAutoSubmit }:
             </span>
           ))}
         </p>
+      ) : null}
+      {graded && mode !== "exam" && plusEnabled(settings.plus) ? (
+        <div className="mt-3 border-t border-border pt-3">
+          <PlusText text={data.sentence} type="wfd" field="sentence" phase="post" qid={question.id} />
+        </div>
       ) : null}
     </div>
   );

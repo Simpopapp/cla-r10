@@ -16,6 +16,8 @@ import {
   fluencyProxy,
   type AlignmentResult,
 } from "@/lib/pte/speaking";
+import { PlusText } from "@/components/plus/PlusText";
+import { plusEnabled } from "@/lib/plus/settings";
 import type { RepeatSentenceData } from "@/lib/pte/types";
 
 const STATUS_CLASS: Record<AlignmentResult["words"][number]["status"], string> = {
@@ -30,6 +32,7 @@ export function RepeatSentenceEngine({
   onSubmit,
   submitted,
   registerAutoSubmit,
+  mode = "practice",
 }: EngineProps) {
   const data = question.data as RepeatSentenceData;
   const { settings } = useAppState();
@@ -109,6 +112,17 @@ export function RepeatSentenceEngine({
               </span>
             ))}
           </p>
+        </div>
+      ) : null}
+      {graded && mode !== "exam" && plusEnabled(settings.plus) ? (
+        <div className="mt-3 border-t border-border pt-3">
+          <PlusText
+            text={data.transcript}
+            type="repeat_sentence"
+            field="transcript"
+            phase="post"
+            qid={question.id}
+          />
         </div>
       ) : null}
     </div>
