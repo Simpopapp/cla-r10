@@ -18,6 +18,7 @@ import {
   type Accent,
 } from "@/lib/storage";
 import { dayKey, daysBetween } from "@/lib/pte/dates";
+import { PLUS_TOGGLES } from "@/lib/plus/settings";
 import { mutateAppState, useAppState } from "@/lib/useAppState";
 
 export const Route = createFileRoute("/settings")({
