@@ -403,9 +403,9 @@ function SettingsPage() {
 
         <Section title="Studie Plus (extra de estudo)">
           <p className="text-sm text-muted-foreground">
-            Recurso extra de estudo: <strong className="text-foreground">não faz parte do PTE</strong> —
-            não entra na nota, no histórico nem na estimativa. Tudo continua salvo apenas neste
-            navegador.
+            Recurso extra de estudo:{" "}
+            <strong className="text-foreground">não faz parte do PTE</strong> — não entra na nota,
+            no histórico nem na estimativa. Tudo continua salvo apenas neste navegador.
           </p>
           <div className="rounded-lg border border-border bg-muted px-3 py-2 text-sm text-muted-foreground">
             <p>
@@ -437,7 +437,6 @@ function SettingsPage() {
             plano.
           </p>
         </Section>
-
 
         <Section title="Privacidade e voz">
           <p className="text-sm text-muted-foreground">

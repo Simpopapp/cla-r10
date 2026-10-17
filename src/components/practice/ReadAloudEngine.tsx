@@ -96,7 +96,13 @@ export function ReadAloudEngine({
   return (
     <div>
       <p className="font-serif text-xl leading-relaxed text-foreground sm:text-2xl">
-        <PlusText text={data.text} type="read_aloud" field="text" phase="pre" disabled={mode === "exam"} />
+        <PlusText
+          text={data.text}
+          type="read_aloud"
+          field="text"
+          phase="pre"
+          disabled={mode === "exam"}
+        />
       </p>
       {!submitted && mode !== "exam" ? (
         <div className="mt-3 flex flex-wrap items-center gap-2">

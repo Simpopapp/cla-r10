@@ -14,7 +14,13 @@ import { useAppState } from "@/lib/useAppState";
 import { gradeDictation, type DictationResult } from "@/lib/pte/dictation";
 import type { WfdData } from "@/lib/pte/types";
 
-export function WfdEngine({ question, onSubmit, submitted, registerAutoSubmit, mode = "practice" }: EngineProps) {
+export function WfdEngine({
+  question,
+  onSubmit,
+  submitted,
+  registerAutoSubmit,
+  mode = "practice",
+}: EngineProps) {
   const data = question.data as WfdData;
   const { settings } = useAppState();
   const [answer, setAnswer] = useState("");
@@ -98,7 +104,13 @@ export function WfdEngine({ question, onSubmit, submitted, registerAutoSubmit, m
       ) : null}
       {graded && mode !== "exam" && plusEnabled(settings.plus) ? (
         <div className="mt-3 border-t border-border pt-3">
-          <PlusText text={data.sentence} type="wfd" field="sentence" phase="post" qid={question.id} />
+          <PlusText
+            text={data.sentence}
+            type="wfd"
+            field="sentence"
+            phase="post"
+            qid={question.id}
+          />
         </div>
       ) : null}
     </div>
