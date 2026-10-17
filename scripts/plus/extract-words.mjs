@@ -4,7 +4,7 @@
 // cobrir ≥ 97% das ocorrências (teto 8.000; PLUS_MAX_WORDS limita p/ tradução).
 // Saída: .opencode/work/plus/words/in-NNN.json (lotes de 200).
 
-import { readFileSync, writeFileSync, mkdirSync, readdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, unlinkSync } from "node:fs";
 import { join } from "node:path";
 import { POLICY } from "./policy.mjs";
 
