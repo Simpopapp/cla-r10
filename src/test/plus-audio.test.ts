@@ -1,8 +1,9 @@
 import { describe, expect, it } from "vitest";
 
-import policyMjs from "../../scripts/plus/policy.mjs";
+import { POLICY as mjsPolicy } from "../../scripts/plus/policy.mjs";
 import { eligibleFields, plusFieldPolicy, plusWordPolicy } from "@/lib/plus/plusAudio";
 import { TASK_TYPES } from "@/lib/pte/types";
+
 
 describe("plus field policy", () => {
   it("chave da resposta nunca aparece antes do resultado", () => {
@@ -58,8 +59,8 @@ describe("plus field policy", () => {
   });
 
   it("matriz do extrator (mjs) está em sincronia com a matriz do app (ts)", () => {
-    const mjsPolicy = (policyMjs as { POLICY: Record<string, Record<string, { phase: string; nativeAudio: boolean }>> }).POLICY;
     for (const type of TASK_TYPES) {
+
       const tsFields = eligibleFields(type).sort((a, b) => a.field.localeCompare(b.field));
       const mjsFields = Object.entries(mjsPolicy[type] ?? {})
         .map(([field, rule]) => ({ field, phase: rule.phase, nativeAudio: rule.nativeAudio }))

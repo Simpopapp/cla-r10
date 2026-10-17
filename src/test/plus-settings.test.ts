@@ -39,11 +39,10 @@ describe("plus settings", () => {
     expect(normalizePlusSettings({ wordTranslation: true }).wordTranslation).toBe(true);
   });
 
-  it("textos dos interruptores separam tradução (significado) de áudio (pronúncia do inglês)", () => {
-    const labels = PLUS_TOGGLES.map((t) => `${t.label} ${t.description}`).join(" ");
-    expect(PLUS_TOGGLES).toHaveLength(3);
-    expect(labels).toMatch(/português|significado/i);
-    expect(labels).toMatch(/inglês/i);
-    expect(labels.toLowerCase()).not.toMatch(/tradução.*áudio|áudio.*traduz/);
+  it("áudio fala o inglês original — nunca a tradução", () => {
+    const audio = PLUS_TOGGLES.find((t) => t.key === "plusAudio");
+    expect(audio?.description).toMatch(/inglês original/i);
+    expect(audio?.description).toMatch(/nunca a tradução/i);
   });
 });
+

@@ -29,9 +29,10 @@ export function splitSentences(text: string): string[] {
 }
 
 function lastWord(s: string): string {
-  const m = /([\w.]+)$/.exec(s);
+  const m = /([\w]+)\.?$/.exec(s);
   return m?.[1] ?? "";
 }
+
 
 export function sentenceCount(text: string): number {
   return splitSentences(text).length;

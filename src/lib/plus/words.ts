@@ -6,9 +6,10 @@ const WORD_RE = /^[a-z]+(-[a-z]+)*$/;
 /** Normaliza apóstrofo tipográfico e remove pontuação externa. */
 export function normalizeWordToken(raw: string): string {
   const cleaned = raw.replaceAll("\u2019", "'").toLowerCase();
-  // pontuação externa ( vírgulas, aspas, colchetes… ) sem tocar apóstrofo interno
-  const stripped = cleaned.replace(/^[^\w'-]+|[^\w'-]+$/g, "");
+  // pontuação externa ( vírgulas, aspas, hifens soltos… ) sem tocar apóstrofo interno
+  const stripped = cleaned.replace(/^[^\w']+|[^\w']+$/g, "");
   return stripped;
+
 }
 
 /** Palavras do texto já normalizadas (minúsculas, sem pontuação externa). */
