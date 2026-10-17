@@ -1,1 +1,3632 @@
-{}
+{
+  "ability": {
+    "literal": "capacidade"
+  },
+  "about": {
+    "literal": "sobre"
+  },
+  "absolute": {
+    "literal": "absoluto"
+  },
+  "academic": {
+    "literal": "acadêmico"
+  },
+  "access": {
+    "literal": "acesso"
+  },
+  "accessible": {
+    "literal": "acessível"
+  },
+  "accommodation": {
+    "literal": "acomodação"
+  },
+  "according": {
+    "literal": "conforme"
+  },
+  "accuracy": {
+    "literal": "precisão"
+  },
+  "across": {
+    "literal": "através de"
+  },
+  "act": {
+    "literal": "agir"
+  },
+  "active": {
+    "literal": "ativo"
+  },
+  "actively": {
+    "literal": "ativamente"
+  },
+  "activities": {
+    "literal": "atividades"
+  },
+  "activity": {
+    "literal": "atividade"
+  },
+  "acts": {
+    "literal": "atos"
+  },
+  "actual": {
+    "literal": "real",
+    "contextual": "actual significa “real” ou “verdadeiro”, não “atual”"
+  },
+  "actually": {
+    "literal": "realmente",
+    "contextual": "na verdade; não significa atualmente"
+  },
+  "adapt": {
+    "literal": "adaptar"
+  },
+  "additionally": {
+    "literal": "além disso"
+  },
+  "address": {
+    "literal": "abordar",
+    "contextual": "address an issue = abordar uma questão"
+  },
+  "addressing": {
+    "literal": "abordando"
+  },
+  "adoption": {
+    "literal": "adoção",
+    "contextual": "adoção de uma tecnologia"
+  },
+  "advanced": {
+    "literal": "avançado",
+    "contextual": "avançou"
+  },
+  "advancements": {
+    "literal": "avanços"
+  },
+  "advantages": {
+    "literal": "vantagens"
+  },
+  "advertising": {
+    "literal": "publicidade"
+  },
+  "advocates": {
+    "literal": "defensores"
+  },
+  "affecting": {
+    "literal": "afetando"
+  },
+  "after": {
+    "literal": "depois"
+  },
+  "against": {
+    "literal": "contra"
+  },
+  "age": {
+    "literal": "idade",
+    "contextual": "era"
+  },
+  "agree": {
+    "literal": "concordar"
+  },
+  "agricultural": {
+    "literal": "agrícola"
+  },
+  "agriculture": {
+    "literal": "agricultura"
+  },
+  "air": {
+    "literal": "ar"
+  },
+  "algorithms": {
+    "literal": "algoritmos"
+  },
+  "all": {
+    "literal": "todo"
+  },
+  "allow": {
+    "literal": "permitir"
+  },
+  "allowing": {
+    "literal": "permitindo"
+  },
+  "allows": {
+    "literal": "permite"
+  },
+  "almost": {
+    "literal": "quase"
+  },
+  "alone": {
+    "literal": "sozinho"
+  },
+  "also": {
+    "literal": "também"
+  },
+  "altered": {
+    "literal": "alterado"
+  },
+  "alternative": {
+    "literal": "alternativa"
+  },
+  "alternatives": {
+    "literal": "alternativas"
+  },
+  "although": {
+    "literal": "embora"
+  },
+  "always": {
+    "literal": "sempre"
+  },
+  "american": {
+    "literal": "estadunidense",
+    "contextual": "americano"
+  },
+  "among": {
+    "literal": "entre"
+  },
+  "an": {
+    "literal": "um"
+  },
+  "analysis": {
+    "literal": "análise"
+  },
+  "analyze": {
+    "literal": "analisar"
+  },
+  "analyzing": {
+    "literal": "analisando"
+  },
+  "ancient": {
+    "literal": "antigo"
+  },
+  "and": {
+    "literal": "e"
+  },
+  "animals": {
+    "literal": "animais"
+  },
+  "another": {
+    "literal": "outro"
+  },
+  "answer": {
+    "literal": "resposta"
+  },
+  "answers": {
+    "literal": "respostas"
+  },
+  "anxiety": {
+    "literal": "ansiedade"
+  },
+  "any": {
+    "literal": "qualquer",
+    "contextual": "algum"
+  },
+  "appears": {
+    "literal": "aparece"
+  },
+  "approach": {
+    "literal": "abordagem"
+  },
+  "architecture": {
+    "literal": "arquitetura"
+  },
+  "are": {
+    "literal": "são"
+  },
+  "area": {
+    "literal": "área"
+  },
+  "areas": {
+    "literal": "áreas"
+  },
+  "argue": {
+    "literal": "argumentar"
+  },
+  "argument": {
+    "literal": "argumento"
+  },
+  "arguments": {
+    "literal": "argumentos"
+  },
+  "around": {
+    "literal": "ao redor"
+  },
+  "as": {
+    "literal": "como"
+  },
+  "assembly": {
+    "literal": "montagem"
+  },
+  "assessment": {
+    "literal": "avaliação"
+  },
+  "assignments": {
+    "literal": "tarefas"
+  },
+  "associated": {
+    "literal": "associado"
+  },
+  "assume": {
+    "literal": "presumir"
+  },
+  "assumption": {
+    "literal": "suposição"
+  },
+  "at": {
+    "literal": "em"
+  },
+  "atmosphere": {
+    "literal": "atmosfera",
+    "contextual": "clima social"
+  },
+  "attention": {
+    "literal": "atenção"
+  },
+  "audience": {
+    "literal": "público"
+  },
+  "author": {
+    "literal": "autor"
+  },
+  "authority": {
+    "literal": "autoridade"
+  },
+  "authors": {
+    "literal": "autores"
+  },
+  "automated": {
+    "literal": "automatizado"
+  },
+  "automation": {
+    "literal": "automação"
+  },
+  "autonomy": {
+    "literal": "autonomia"
+  },
+  "available": {
+    "literal": "disponível"
+  },
+  "avoid": {
+    "literal": "evitar"
+  },
+  "away": {
+    "literal": "longe"
+  },
+  "back": {
+    "literal": "costas"
+  },
+  "bacteria": {
+    "literal": "bactérias"
+  },
+  "balance": {
+    "literal": "equilíbrio"
+  },
+  "balanced": {
+    "literal": "equilibrado"
+  },
+  "barriers": {
+    "literal": "barreiras"
+  },
+  "based": {
+    "literal": "baseado",
+    "contextual": "com base em"
+  },
+  "bats": {
+    "literal": "morcegos"
+  },
+  "be": {
+    "literal": "ser"
+  },
+  "became": {
+    "literal": "tornou-se"
+  },
+  "because": {
+    "literal": "porque"
+  },
+  "become": {
+    "literal": "tornar-se"
+  },
+  "becomes": {
+    "literal": "torna-se"
+  },
+  "becoming": {
+    "literal": "tornando-se"
+  },
+  "bed": {
+    "literal": "cama"
+  },
+  "been": {
+    "literal": "sido"
+  },
+  "before": {
+    "literal": "antes"
+  },
+  "began": {
+    "literal": "começou"
+  },
+  "behavior": {
+    "literal": "comportamento"
+  },
+  "behind": {
+    "literal": "atrás"
+  },
+  "being": {
+    "literal": "sendo"
+  },
+  "believe": {
+    "literal": "acreditar"
+  },
+  "benefit": {
+    "literal": "benefício"
+  },
+  "benefits": {
+    "literal": "benefícios"
+  },
+  "best": {
+    "literal": "melhor"
+  },
+  "better": {
+    "literal": "melhor"
+  },
+  "between": {
+    "literal": "entre"
+  },
+  "beyond": {
+    "literal": "além"
+  },
+  "biodiversity": {
+    "literal": "biodiversidade"
+  },
+  "biological": {
+    "literal": "biológico"
+  },
+  "biology": {
+    "literal": "biologia"
+  },
+  "biphasic": {
+    "literal": "bifásico"
+  },
+  "birds": {
+    "literal": "pássaros"
+  },
+  "black": {
+    "literal": "preto"
+  },
+  "block": {
+    "literal": "bloco",
+    "contextual": "impedir"
+  },
+  "blue": {
+    "literal": "azul"
+  },
+  "bodies": {
+    "literal": "corpos"
+  },
+  "body": {
+    "literal": "corpo",
+    "contextual": "órgão ou entidade"
+  },
+  "books": {
+    "literal": "livros",
+    "contextual": "registra"
+  },
+  "both": {
+    "literal": "ambos"
+  },
+  "boundaries": {
+    "literal": "limites"
+  },
+  "brain": {
+    "literal": "cérebro"
+  },
+  "build": {
+    "literal": "construir",
+    "contextual": "desenvolver"
+  },
+  "building": {
+    "literal": "edifício",
+    "contextual": "construção"
+  },
+  "burden": {
+    "literal": "ônus"
+  },
+  "business": {
+    "literal": "negócio",
+    "contextual": "empresa"
+  },
+  "businesses": {
+    "literal": "empresas"
+  },
+  "but": {
+    "literal": "mas"
+  },
+  "by": {
+    "literal": "por"
+  },
+  "call": {
+    "literal": "chamar"
+  },
+  "called": {
+    "literal": "chamado"
+  },
+  "can": {
+    "literal": "pode"
+  },
+  "cannot": {
+    "literal": "não pode"
+  },
+  "capability": {
+    "literal": "capacidade"
+  },
+  "capacity": {
+    "literal": "capacidade"
+  },
+  "capture": {
+    "literal": "capturar"
+  },
+  "carbon": {
+    "literal": "carbono"
+  },
+  "career": {
+    "literal": "carreira"
+  },
+  "careful": {
+    "literal": "cuidadoso"
+  },
+  "cars": {
+    "literal": "carros"
+  },
+  "cause": {
+    "literal": "causa"
+  },
+  "causes": {
+    "literal": "causas",
+    "contextual": "causa"
+  },
+  "cells": {
+    "literal": "células",
+    "contextual": "cela"
+  },
+  "centers": {
+    "literal": "centros"
+  },
+  "centuries": {
+    "literal": "séculos"
+  },
+  "century": {
+    "literal": "século"
+  },
+  "certain": {
+    "literal": "certo"
+  },
+  "challenge": {
+    "literal": "desafio"
+  },
+  "challenges": {
+    "literal": "desafios"
+  },
+  "challenging": {
+    "literal": "desafiador",
+    "contextual": "exigente"
+  },
+  "change": {
+    "literal": "mudança"
+  },
+  "changed": {
+    "literal": "mudou"
+  },
+  "changes": {
+    "literal": "mudanças"
+  },
+  "changing": {
+    "literal": "mudando",
+    "contextual": "em transformação"
+  },
+  "charging": {
+    "literal": "cobrança"
+  },
+  "chemical": {
+    "literal": "químico"
+  },
+  "children": {
+    "literal": "crianças"
+  },
+  "choice": {
+    "literal": "escolha"
+  },
+  "choices": {
+    "literal": "escolhas"
+  },
+  "chronic": {
+    "literal": "crônico"
+  },
+  "cities": {
+    "literal": "cidades"
+  },
+  "city": {
+    "literal": "cidade"
+  },
+  "class": {
+    "literal": "aula",
+    "contextual": "classe social"
+  },
+  "classes": {
+    "literal": "aulas"
+  },
+  "classroom": {
+    "literal": "sala de aula"
+  },
+  "clay": {
+    "literal": "argila"
+  },
+  "clear": {
+    "literal": "claro",
+    "contextual": "limpar"
+  },
+  "climate": {
+    "literal": "clima"
+  },
+  "coffee": {
+    "literal": "café"
+  },
+  "cognitive": {
+    "literal": "cognitivo"
+  },
+  "collaboration": {
+    "literal": "colaboração"
+  },
+  "collaborative": {
+    "literal": "colaborativo"
+  },
+  "color": {
+    "literal": "cor",
+    "contextual": "colorir"
+  },
+  "combat": {
+    "literal": "combater"
+  },
+  "comes": {
+    "literal": "vem"
+  },
+  "commercial": {
+    "literal": "comercial"
+  },
+  "common": {
+    "literal": "comum"
+  },
+  "communication": {
+    "literal": "comunicação"
+  },
+  "communities": {
+    "literal": "comunidades"
+  },
+  "community": {
+    "literal": "comunidade"
+  },
+  "companies": {
+    "literal": "empresas"
+  },
+  "company": {
+    "literal": "empresa"
+  },
+  "compared": {
+    "literal": "comparado",
+    "contextual": "em comparação com"
+  },
+  "completely": {
+    "literal": "completamente"
+  },
+  "complex": {
+    "literal": "complexo"
+  },
+  "component": {
+    "literal": "componente"
+  },
+  "comprehensive": {
+    "literal": "abrangente"
+  },
+  "concept": {
+    "literal": "conceito"
+  },
+  "concepts": {
+    "literal": "conceitos"
+  },
+  "concern": {
+    "literal": "preocupação"
+  },
+  "concerns": {
+    "literal": "preocupações"
+  },
+  "conclusion": {
+    "literal": "conclusão"
+  },
+  "conditions": {
+    "literal": "condições"
+  },
+  "congestion": {
+    "literal": "congestionamento"
+  },
+  "connections": {
+    "literal": "conexões"
+  },
+  "consequently": {
+    "literal": "consequentemente"
+  },
+  "conservation": {
+    "literal": "conservação"
+  },
+  "consider": {
+    "literal": "considerar"
+  },
+  "constant": {
+    "literal": "constante"
+  },
+  "construction": {
+    "literal": "construção"
+  },
+  "consumer": {
+    "literal": "consumidor"
+  },
+  "consumers": {
+    "literal": "consumidores"
+  },
+  "consumption": {
+    "literal": "consumo"
+  },
+  "contact": {
+    "literal": "contato"
+  },
+  "contemporary": {
+    "literal": "contemporâneo"
+  },
+  "content": {
+    "literal": "conteúdo"
+  },
+  "context": {
+    "literal": "contexto"
+  },
+  "continue": {
+    "literal": "continuar"
+  },
+  "continuous": {
+    "literal": "contínuo"
+  },
+  "contrast": {
+    "literal": "contraste"
+  },
+  "control": {
+    "literal": "controle",
+    "contextual": "controlar"
+  },
+  "convenience": {
+    "literal": "conveniência"
+  },
+  "conventional": {
+    "literal": "convencional"
+  },
+  "conversely": {
+    "literal": "por outro lado"
+  },
+  "cooperation": {
+    "literal": "cooperação"
+  },
+  "core": {
+    "literal": "núcleo",
+    "contextual": "essencial"
+  },
+  "corporations": {
+    "literal": "corporações"
+  },
+  "cost": {
+    "literal": "custo",
+    "contextual": "custar"
+  },
+  "costs": {
+    "literal": "custos"
+  },
+  "could": {
+    "literal": "poderia"
+  },
+  "countries": {
+    "literal": "países"
+  },
+  "country": {
+    "literal": "país"
+  },
+  "course": {
+    "literal": "curso",
+    "contextual": "trajeto"
+  },
+  "covers": {
+    "literal": "cobre",
+    "contextual": "abrange"
+  },
+  "create": {
+    "literal": "criar"
+  },
+  "created": {
+    "literal": "criou"
+  },
+  "creates": {
+    "literal": "cria"
+  },
+  "creating": {
+    "literal": "criando"
+  },
+  "crisis": {
+    "literal": "crise"
+  },
+  "critical": {
+    "literal": "crítico"
+  },
+  "critics": {
+    "literal": "críticos"
+  },
+  "crops": {
+    "literal": "culturas",
+    "contextual": "crops, no contexto agrícola, são culturas ou lavouras"
+  },
+  "crucially": {
+    "literal": "fundamentalmente"
+  },
+  "cues": {
+    "literal": "pistas",
+    "contextual": "sinais contextuais"
+  },
+  "culture": {
+    "literal": "cultura"
+  },
+  "cultures": {
+    "literal": "culturas"
+  },
+  "current": {
+    "literal": "atual"
+  },
+  "customers": {
+    "literal": "clientes"
+  },
+  "cycle": {
+    "literal": "ciclo",
+    "contextual": "ciclar"
+  },
+  "daily": {
+    "literal": "diário"
+  },
+  "data": {
+    "literal": "dados"
+  },
+  "day": {
+    "literal": "dia",
+    "contextual": "jornada"
+  },
+  "decades": {
+    "literal": "décadas"
+  },
+  "decision-making": {
+    "literal": "tomada de decisão"
+  },
+  "decisions": {
+    "literal": "decisões"
+  },
+  "decline": {
+    "literal": "declínio"
+  },
+  "deep": {
+    "literal": "profundo"
+  },
+  "degree": {
+    "literal": "grau"
+  },
+  "demand": {
+    "literal": "demanda"
+  },
+  "demands": {
+    "literal": "demandas",
+    "contextual": "exige"
+  },
+  "demonstrate": {
+    "literal": "demonstrar"
+  },
+  "demonstrated": {
+    "literal": "demonstrou"
+  },
+  "demonstrates": {
+    "literal": "demonstra"
+  },
+  "dense": {
+    "literal": "denso"
+  },
+  "depends": {
+    "literal": "depende"
+  },
+  "design": {
+    "literal": "projeto",
+    "contextual": "projetar"
+  },
+  "designed": {
+    "literal": "projetado"
+  },
+  "despite": {
+    "literal": "apesar de"
+  },
+  "detect": {
+    "literal": "detectar"
+  },
+  "develop": {
+    "literal": "desenvolver"
+  },
+  "developed": {
+    "literal": "desenvolveu"
+  },
+  "developing": {
+    "literal": "em desenvolvimento"
+  },
+  "development": {
+    "literal": "desenvolvimento"
+  },
+  "devices": {
+    "literal": "dispositivos"
+  },
+  "dialogue": {
+    "literal": "diálogo"
+  },
+  "did": {
+    "literal": "fez",
+    "contextual": "auxiliar no passado"
+  },
+  "different": {
+    "literal": "diferente"
+  },
+  "difficult": {
+    "literal": "difícil"
+  },
+  "dioxide": {
+    "literal": "dióxido",
+    "contextual": "dióxido de carbono"
+  },
+  "direct": {
+    "literal": "direto"
+  },
+  "directly": {
+    "literal": "diretamente"
+  },
+  "disagree": {
+    "literal": "discordar"
+  },
+  "discovery": {
+    "literal": "descoberta"
+  },
+  "discuss": {
+    "literal": "discutir"
+  },
+  "disease": {
+    "literal": "doença"
+  },
+  "diseases": {
+    "literal": "doenças"
+  },
+  "distinct": {
+    "literal": "distinto"
+  },
+  "distinguish": {
+    "literal": "distinguir"
+  },
+  "diverse": {
+    "literal": "diverso"
+  },
+  "diversity": {
+    "literal": "diversidade"
+  },
+  "do": {
+    "literal": "fazer"
+  },
+  "does": {
+    "literal": "faz",
+    "contextual": "auxiliar em perguntas"
+  },
+  "domestic": {
+    "literal": "doméstico"
+  },
+  "dominant": {
+    "literal": "dominante"
+  },
+  "down": {
+    "literal": "para baixo",
+    "contextual": "redução"
+  },
+  "drive": {
+    "literal": "impulsionar",
+    "contextual": "dirigir"
+  },
+  "driven": {
+    "literal": "impulsionado",
+    "contextual": "movido a"
+  },
+  "driving": {
+    "literal": "condução"
+  },
+  "due": {
+    "literal": "devido"
+  },
+  "during": {
+    "literal": "durante"
+  },
+  "dynamic": {
+    "literal": "dinâmico"
+  },
+  "each": {
+    "literal": "cada"
+  },
+  "early": {
+    "literal": "precoce"
+  },
+  "earth": {
+    "literal": "terra"
+  },
+  "easily": {
+    "literal": "facilmente"
+  },
+  "economic": {
+    "literal": "econômico"
+  },
+  "economies": {
+    "literal": "economias"
+  },
+  "economy": {
+    "literal": "economia"
+  },
+  "ecosystem": {
+    "literal": "ecossistema"
+  },
+  "ecosystems": {
+    "literal": "ecossistemas"
+  },
+  "education": {
+    "literal": "educação"
+  },
+  "educational": {
+    "literal": "educacional"
+  },
+  "educators": {
+    "literal": "educadores"
+  },
+  "effect": {
+    "literal": "efeito",
+    "contextual": "causar efeito"
+  },
+  "effective": {
+    "literal": "eficaz"
+  },
+  "effectively": {
+    "literal": "efetivamente"
+  },
+  "effects": {
+    "literal": "efeitos"
+  },
+  "efficiency": {
+    "literal": "eficiência"
+  },
+  "efficient": {
+    "literal": "eficiente"
+  },
+  "efforts": {
+    "literal": "esforços"
+  },
+  "electric": {
+    "literal": "elétrico"
+  },
+  "elements": {
+    "literal": "elementos"
+  },
+  "emerging": {
+    "literal": "emergente"
+  },
+  "emissions": {
+    "literal": "emissões"
+  },
+  "emotional": {
+    "literal": "emocional"
+  },
+  "employees": {
+    "literal": "funcionários"
+  },
+  "employers": {
+    "literal": "empregadores"
+  },
+  "employment": {
+    "literal": "emprego"
+  },
+  "enabling": {
+    "literal": "permitindo"
+  },
+  "encourage": {
+    "literal": "incentivar"
+  },
+  "encourages": {
+    "literal": "incentiva"
+  },
+  "end": {
+    "literal": "fim"
+  },
+  "energy": {
+    "literal": "energia"
+  },
+  "engage": {
+    "literal": "envolver",
+    "contextual": "participar"
+  },
+  "engagement": {
+    "literal": "engajamento",
+    "contextual": "participação"
+  },
+  "engaging": {
+    "literal": "envolvente",
+    "contextual": "engajando"
+  },
+  "engineering": {
+    "literal": "engenharia"
+  },
+  "enhance": {
+    "literal": "aprimorar"
+  },
+  "ensure": {
+    "literal": "garantir"
+  },
+  "ensures": {
+    "literal": "garante"
+  },
+  "ensuring": {
+    "literal": "garantindo"
+  },
+  "entire": {
+    "literal": "inteiro"
+  },
+  "entirely": {
+    "literal": "inteiramente"
+  },
+  "environment": {
+    "literal": "ambiente"
+  },
+  "environmental": {
+    "literal": "ambiental"
+  },
+  "environments": {
+    "literal": "ambientes"
+  },
+  "essay": {
+    "literal": "redação",
+    "contextual": "ensaio acadêmico"
+  },
+  "essential": {
+    "literal": "essencial"
+  },
+  "essentially": {
+    "literal": "essencialmente"
+  },
+  "established": {
+    "literal": "estabelecido",
+    "contextual": "fundou"
+  },
+  "establishing": {
+    "literal": "estabelecendo"
+  },
+  "ethical": {
+    "literal": "ético"
+  },
+  "european": {
+    "literal": "europeu"
+  },
+  "evaluate": {
+    "literal": "avaliar"
+  },
+  "even": {
+    "literal": "até"
+  },
+  "event": {
+    "literal": "evento"
+  },
+  "events": {
+    "literal": "eventos"
+  },
+  "eventually": {
+    "literal": "por fim"
+  },
+  "every": {
+    "literal": "cada"
+  },
+  "everything": {
+    "literal": "tudo"
+  },
+  "evidence": {
+    "literal": "evidência",
+    "contextual": "evidências científicas"
+  },
+  "evolution": {
+    "literal": "evolução"
+  },
+  "evolved": {
+    "literal": "evoluiu"
+  },
+  "examine": {
+    "literal": "examinar"
+  },
+  "example": {
+    "literal": "exemplo"
+  },
+  "excessive": {
+    "literal": "excessivo"
+  },
+  "existence": {
+    "literal": "existência"
+  },
+  "existing": {
+    "literal": "existente"
+  },
+  "expand": {
+    "literal": "expandir"
+  },
+  "expansion": {
+    "literal": "expansão"
+  },
+  "expensive": {
+    "literal": "caro"
+  },
+  "experience": {
+    "literal": "experiência"
+  },
+  "experiences": {
+    "literal": "experiências",
+    "contextual": "vivencia"
+  },
+  "experts": {
+    "literal": "especialistas"
+  },
+  "exposure": {
+    "literal": "exposição"
+  },
+  "extensive": {
+    "literal": "extenso"
+  },
+  "extent": {
+    "literal": "grau",
+    "contextual": "até que ponto"
+  },
+  "external": {
+    "literal": "externo"
+  },
+  "face": {
+    "literal": "rosto",
+    "contextual": "enfrentar um desafio"
+  },
+  "factors": {
+    "literal": "fatores"
+  },
+  "fail": {
+    "literal": "falhar"
+  },
+  "failure": {
+    "literal": "fracasso"
+  },
+  "fall": {
+    "literal": "queda"
+  },
+  "family": {
+    "literal": "família"
+  },
+  "far": {
+    "literal": "longe"
+  },
+  "farmers": {
+    "literal": "agricultores"
+  },
+  "farming": {
+    "literal": "agricultura"
+  },
+  "faster": {
+    "literal": "mais rápido"
+  },
+  "features": {
+    "literal": "características"
+  },
+  "feedback": {
+    "literal": "retorno",
+    "contextual": "feedback sobre o desempenho"
+  },
+  "feel": {
+    "literal": "sentir",
+    "contextual": "achar"
+  },
+  "few": {
+    "literal": "poucos"
+  },
+  "field": {
+    "literal": "campo",
+    "contextual": "área de estudo"
+  },
+  "fields": {
+    "literal": "campos"
+  },
+  "fill": {
+    "literal": "preencher"
+  },
+  "financial": {
+    "literal": "financeiro"
+  },
+  "find": {
+    "literal": "encontrar"
+  },
+  "finding": {
+    "literal": "descoberta",
+    "contextual": "encontrando"
+  },
+  "firms": {
+    "literal": "empresas"
+  },
+  "first": {
+    "literal": "primeiro"
+  },
+  "firstly": {
+    "literal": "primeiramente"
+  },
+  "flexibility": {
+    "literal": "flexibilidade"
+  },
+  "flexible": {
+    "literal": "flexível"
+  },
+  "flow": {
+    "literal": "fluxo",
+    "contextual": "fluir"
+  },
+  "focus": {
+    "literal": "foco"
+  },
+  "following": {
+    "literal": "seguinte"
+  },
+  "food": {
+    "literal": "comida"
+  },
+  "footprint": {
+    "literal": "pegada",
+    "contextual": "footprint ambiental é “pegada ambiental”"
+  },
+  "for": {
+    "literal": "para"
+  },
+  "forced": {
+    "literal": "forçado"
+  },
+  "forces": {
+    "literal": "forças"
+  },
+  "form": {
+    "literal": "forma",
+    "contextual": "formulário"
+  },
+  "format": {
+    "literal": "formato"
+  },
+  "foster": {
+    "literal": "promover"
+  },
+  "fostering": {
+    "literal": "promovendo"
+  },
+  "found": {
+    "literal": "encontrado"
+  },
+  "four": {
+    "literal": "quatro"
+  },
+  "framework": {
+    "literal": "estrutura"
+  },
+  "free": {
+    "literal": "livre",
+    "contextual": "gratuito"
+  },
+  "frequently": {
+    "literal": "frequentemente"
+  },
+  "from": {
+    "literal": "de"
+  },
+  "fully": {
+    "literal": "completamente"
+  },
+  "function": {
+    "literal": "função"
+  },
+  "functions": {
+    "literal": "funções"
+  },
+  "fundamentally": {
+    "literal": "fundamentalmente"
+  },
+  "funding": {
+    "literal": "financiamento"
+  },
+  "further": {
+    "literal": "adicional"
+  },
+  "furthermore": {
+    "literal": "além disso"
+  },
+  "future": {
+    "literal": "futuro"
+  },
+  "gain": {
+    "literal": "ganho"
+  },
+  "gap": {
+    "literal": "lacuna",
+    "contextual": "diferença entre grupos"
+  },
+  "garden": {
+    "literal": "jardim"
+  },
+  "gas": {
+    "literal": "gás"
+  },
+  "generally": {
+    "literal": "geralmente"
+  },
+  "generate": {
+    "literal": "gerar"
+  },
+  "generated": {
+    "literal": "gerou"
+  },
+  "generations": {
+    "literal": "gerações"
+  },
+  "genetic": {
+    "literal": "genético"
+  },
+  "genuine": {
+    "literal": "genuíno"
+  },
+  "get": {
+    "literal": "obter"
+  },
+  "give": {
+    "literal": "dar"
+  },
+  "go": {
+    "literal": "ir"
+  },
+  "goal": {
+    "literal": "objetivo"
+  },
+  "goals": {
+    "literal": "objetivos"
+  },
+  "gold": {
+    "literal": "ouro"
+  },
+  "good": {
+    "literal": "bom"
+  },
+  "goods": {
+    "literal": "mercadorias",
+    "contextual": "bens"
+  },
+  "government": {
+    "literal": "governo"
+  },
+  "governments": {
+    "literal": "governos"
+  },
+  "greater": {
+    "literal": "maior"
+  },
+  "green": {
+    "literal": "verde",
+    "contextual": "ambientalmente sustentável"
+  },
+  "greenhouse": {
+    "literal": "estufa",
+    "contextual": "greenhouse gas significa “gás de efeito estufa”"
+  },
+  "ground": {
+    "literal": "solo"
+  },
+  "group": {
+    "literal": "grupo"
+  },
+  "groups": {
+    "literal": "grupos"
+  },
+  "growing": {
+    "literal": "crescente"
+  },
+  "growth": {
+    "literal": "crescimento"
+  },
+  "habits": {
+    "literal": "hábitos"
+  },
+  "had": {
+    "literal": "tinha"
+  },
+  "has": {
+    "literal": "tem"
+  },
+  "have": {
+    "literal": "ter"
+  },
+  "he": {
+    "literal": "ele"
+  },
+  "health": {
+    "literal": "saúde"
+  },
+  "healthcare": {
+    "literal": "assistência médica"
+  },
+  "heart": {
+    "literal": "coração"
+  },
+  "heat": {
+    "literal": "calor",
+    "contextual": "aquecer"
+  },
+  "heavily": {
+    "literal": "fortemente"
+  },
+  "heavy": {
+    "literal": "pesado"
+  },
+  "help": {
+    "literal": "ajuda"
+  },
+  "helps": {
+    "literal": "ajuda"
+  },
+  "her": {
+    "literal": "dela",
+    "contextual": "a ela"
+  },
+  "here": {
+    "literal": "aqui"
+  },
+  "heritage": {
+    "literal": "patrimônio"
+  },
+  "high": {
+    "literal": "alto"
+  },
+  "higher": {
+    "literal": "mais alto"
+  },
+  "highest": {
+    "literal": "mais alto"
+  },
+  "highly": {
+    "literal": "altamente"
+  },
+  "his": {
+    "literal": "dele"
+  },
+  "historical": {
+    "literal": "histórico"
+  },
+  "historically": {
+    "literal": "historicamente"
+  },
+  "history": {
+    "literal": "história"
+  },
+  "home": {
+    "literal": "casa",
+    "contextual": "lar"
+  },
+  "homes": {
+    "literal": "casas"
+  },
+  "hour": {
+    "literal": "hora"
+  },
+  "hours": {
+    "literal": "horas"
+  },
+  "housing": {
+    "literal": "moradia"
+  },
+  "how": {
+    "literal": "como"
+  },
+  "however": {
+    "literal": "entretanto"
+  },
+  "human": {
+    "literal": "humano"
+  },
+  "humans": {
+    "literal": "seres humanos"
+  },
+  "hypertext": {
+    "literal": "hipertexto"
+  },
+  "hypothesis": {
+    "literal": "hipótese"
+  },
+  "ice": {
+    "literal": "gelo"
+  },
+  "ideas": {
+    "literal": "ideias"
+  },
+  "identify": {
+    "literal": "identificar"
+  },
+  "if": {
+    "literal": "se"
+  },
+  "immediate": {
+    "literal": "imediato"
+  },
+  "immediately": {
+    "literal": "imediatamente"
+  },
+  "impact": {
+    "literal": "impacto"
+  },
+  "impacts": {
+    "literal": "impactos",
+    "contextual": "afeta"
+  },
+  "implementation": {
+    "literal": "implementação"
+  },
+  "implementing": {
+    "literal": "implementando"
+  },
+  "implies": {
+    "literal": "implica"
+  },
+  "important": {
+    "literal": "importante"
+  },
+  "improve": {
+    "literal": "melhorar"
+  },
+  "improved": {
+    "literal": "melhorado"
+  },
+  "in": {
+    "literal": "em"
+  },
+  "include": {
+    "literal": "incluir"
+  },
+  "including": {
+    "literal": "incluindo"
+  },
+  "increase": {
+    "literal": "aumento",
+    "contextual": "aumentar"
+  },
+  "increased": {
+    "literal": "aumentado"
+  },
+  "increases": {
+    "literal": "aumenta"
+  },
+  "increasing": {
+    "literal": "crescente"
+  },
+  "increasingly": {
+    "literal": "cada vez mais"
+  },
+  "independent": {
+    "literal": "independente"
+  },
+  "indicate": {
+    "literal": "indicar"
+  },
+  "individual": {
+    "literal": "indivíduo"
+  },
+  "individuals": {
+    "literal": "indivíduos"
+  },
+  "industries": {
+    "literal": "indústrias"
+  },
+  "industry": {
+    "literal": "setor"
+  },
+  "influence": {
+    "literal": "influência"
+  },
+  "information": {
+    "literal": "informação"
+  },
+  "infrastructure": {
+    "literal": "infraestrutura"
+  },
+  "initial": {
+    "literal": "inicial"
+  },
+  "initially": {
+    "literal": "inicialmente"
+  },
+  "initiatives": {
+    "literal": "iniciativas"
+  },
+  "innovation": {
+    "literal": "inovação"
+  },
+  "innovative": {
+    "literal": "inovador"
+  },
+  "insights": {
+    "literal": "percepções",
+    "contextual": "insights de pesquisa são descobertas ou conclusões relevantes"
+  },
+  "instance": {
+    "literal": "exemplo",
+    "contextual": "for instance = por exemplo"
+  },
+  "instead": {
+    "literal": "em vez disso"
+  },
+  "institutions": {
+    "literal": "instituições"
+  },
+  "integration": {
+    "literal": "integração"
+  },
+  "intellectual": {
+    "literal": "intelectual"
+  },
+  "intelligence": {
+    "literal": "inteligência"
+  },
+  "intended": {
+    "literal": "pretendido"
+  },
+  "interaction": {
+    "literal": "interação"
+  },
+  "interests": {
+    "literal": "interesses"
+  },
+  "internal": {
+    "literal": "interno"
+  },
+  "international": {
+    "literal": "internacional"
+  },
+  "into": {
+    "literal": "para dentro"
+  },
+  "introduced": {
+    "literal": "introduziu"
+  },
+  "introduction": {
+    "literal": "introdução"
+  },
+  "investment": {
+    "literal": "investimento"
+  },
+  "involved": {
+    "literal": "envolvido",
+    "contextual": "participou"
+  },
+  "involves": {
+    "literal": "envolve"
+  },
+  "involving": {
+    "literal": "envolvendo"
+  },
+  "is": {
+    "literal": "é"
+  },
+  "issue": {
+    "literal": "questão",
+    "contextual": "publicação"
+  },
+  "issues": {
+    "literal": "questões",
+    "contextual": "problemas"
+  },
+  "it": {
+    "literal": "isso"
+  },
+  "items": {
+    "literal": "itens"
+  },
+  "its": {
+    "literal": "seu"
+  },
+  "itself": {
+    "literal": "si mesmo"
+  },
+  "job": {
+    "literal": "emprego",
+    "contextual": "tarefa"
+  },
+  "joining": {
+    "literal": "unindo"
+  },
+  "journey": {
+    "literal": "jornada"
+  },
+  "just": {
+    "literal": "apenas"
+  },
+  "key": {
+    "literal": "chave",
+    "contextual": "key factor = fator-chave"
+  },
+  "know": {
+    "literal": "saber"
+  },
+  "knowledge": {
+    "literal": "conhecimento"
+  },
+  "known": {
+    "literal": "conhecido"
+  },
+  "label": {
+    "literal": "rótulo"
+  },
+  "labor": {
+    "literal": "trabalho",
+    "contextual": "mão de obra"
+  },
+  "lack": {
+    "literal": "falta",
+    "contextual": "faltar"
+  },
+  "land": {
+    "literal": "terra"
+  },
+  "landscape": {
+    "literal": "paisagem"
+  },
+  "language": {
+    "literal": "idioma"
+  },
+  "large": {
+    "literal": "grande"
+  },
+  "largely": {
+    "literal": "principalmente"
+  },
+  "larger": {
+    "literal": "maior"
+  },
+  "last": {
+    "literal": "último"
+  },
+  "late": {
+    "literal": "tardio"
+  },
+  "later": {
+    "literal": "mais tarde"
+  },
+  "law": {
+    "literal": "lei"
+  },
+  "laws": {
+    "literal": "leis"
+  },
+  "lead": {
+    "literal": "conduzir"
+  },
+  "leadership": {
+    "literal": "liderança"
+  },
+  "leading": {
+    "literal": "liderando"
+  },
+  "leads": {
+    "literal": "leva"
+  },
+  "learn": {
+    "literal": "aprender"
+  },
+  "learners": {
+    "literal": "aprendizes",
+    "contextual": "estudantes"
+  },
+  "learning": {
+    "literal": "aprendizagem"
+  },
+  "lecture": {
+    "literal": "palestra",
+    "contextual": "aula expositiva"
+  },
+  "led": {
+    "literal": "conduziu",
+    "contextual": "levou a"
+  },
+  "legal": {
+    "literal": "jurídico"
+  },
+  "less": {
+    "literal": "menos"
+  },
+  "level": {
+    "literal": "nível"
+  },
+  "levels": {
+    "literal": "níveis"
+  },
+  "libraries": {
+    "literal": "bibliotecas"
+  },
+  "library": {
+    "literal": "biblioteca"
+  },
+  "life": {
+    "literal": "vida"
+  },
+  "light": {
+    "literal": "luz"
+  },
+  "lighting": {
+    "literal": "iluminação"
+  },
+  "like": {
+    "literal": "como"
+  },
+  "likely": {
+    "literal": "provável"
+  },
+  "limited": {
+    "literal": "limitado"
+  },
+  "linked": {
+    "literal": "ligado"
+  },
+  "listening": {
+    "literal": "escuta",
+    "contextual": "ouvindo"
+  },
+  "literacy": {
+    "literal": "alfabetização",
+    "contextual": "letramento"
+  },
+  "literature": {
+    "literal": "literatura",
+    "contextual": "estudos publicados sobre um tema"
+  },
+  "live": {
+    "literal": "viver"
+  },
+  "lives": {
+    "literal": "vidas",
+    "contextual": "mora"
+  },
+  "living": {
+    "literal": "vivendo"
+  },
+  "located": {
+    "literal": "localizado"
+  },
+  "long": {
+    "literal": "longo"
+  },
+  "long-term": {
+    "literal": "longo prazo"
+  },
+  "longer": {
+    "literal": "mais longo",
+    "contextual": "já não"
+  },
+  "look": {
+    "literal": "olhar",
+    "contextual": "parecer"
+  },
+  "loss": {
+    "literal": "perda"
+  },
+  "lost": {
+    "literal": "perdido"
+  },
+  "lower": {
+    "literal": "mais baixo",
+    "contextual": "reduzir"
+  },
+  "lowest": {
+    "literal": "mais baixo"
+  },
+  "machines": {
+    "literal": "máquinas"
+  },
+  "made": {
+    "literal": "feito",
+    "contextual": "tornou"
+  },
+  "magnetic": {
+    "literal": "magnético"
+  },
+  "main": {
+    "literal": "principal"
+  },
+  "maintain": {
+    "literal": "manter"
+  },
+  "maintaining": {
+    "literal": "mantendo",
+    "contextual": "manutenção de algo"
+  },
+  "major": {
+    "literal": "principal"
+  },
+  "make": {
+    "literal": "fazer"
+  },
+  "makes": {
+    "literal": "faz"
+  },
+  "making": {
+    "literal": "fazendo"
+  },
+  "manage": {
+    "literal": "gerenciar"
+  },
+  "management": {
+    "literal": "gestão"
+  },
+  "managing": {
+    "literal": "gerenciando",
+    "contextual": "administrando"
+  },
+  "many": {
+    "literal": "muitos"
+  },
+  "marine": {
+    "literal": "marinho"
+  },
+  "market": {
+    "literal": "mercado"
+  },
+  "markets": {
+    "literal": "mercados",
+    "contextual": "comercializa"
+  },
+  "mass": {
+    "literal": "massa"
+  },
+  "massive": {
+    "literal": "enorme"
+  },
+  "materials": {
+    "literal": "materiais"
+  },
+  "matter": {
+    "literal": "assunto"
+  },
+  "may": {
+    "literal": "pode"
+  },
+  "meaning": {
+    "literal": "significado",
+    "contextual": "significando"
+  },
+  "means": {
+    "literal": "meios",
+    "contextual": "significa"
+  },
+  "measures": {
+    "literal": "medidas",
+    "contextual": "avalia"
+  },
+  "mechanism": {
+    "literal": "mecanismo"
+  },
+  "media": {
+    "literal": "meios de comunicação"
+  },
+  "medical": {
+    "literal": "médico"
+  },
+  "members": {
+    "literal": "membros"
+  },
+  "memories": {
+    "literal": "memórias"
+  },
+  "memory": {
+    "literal": "memória"
+  },
+  "men": {
+    "literal": "homens"
+  },
+  "mere": {
+    "literal": "mero"
+  },
+  "merely": {
+    "literal": "meramente"
+  },
+  "method": {
+    "literal": "método"
+  },
+  "methods": {
+    "literal": "métodos"
+  },
+  "middle": {
+    "literal": "meio",
+    "contextual": "parte central"
+  },
+  "might": {
+    "literal": "poderia"
+  },
+  "million": {
+    "literal": "milhão"
+  },
+  "millions": {
+    "literal": "milhões"
+  },
+  "mitigate": {
+    "literal": "mitigar"
+  },
+  "model": {
+    "literal": "modelo"
+  },
+  "models": {
+    "literal": "modelos"
+  },
+  "modern": {
+    "literal": "moderno"
+  },
+  "money": {
+    "literal": "dinheiro"
+  },
+  "more": {
+    "literal": "mais"
+  },
+  "moreover": {
+    "literal": "além disso"
+  },
+  "morning": {
+    "literal": "manhã"
+  },
+  "most": {
+    "literal": "maioria"
+  },
+  "move": {
+    "literal": "mover",
+    "contextual": "mudança"
+  },
+  "movement": {
+    "literal": "movimento"
+  },
+  "moving": {
+    "literal": "movendo",
+    "contextual": "em movimento"
+  },
+  "much": {
+    "literal": "muito"
+  },
+  "music": {
+    "literal": "música"
+  },
+  "must": {
+    "literal": "deve"
+  },
+  "my": {
+    "literal": "meu"
+  },
+  "narrative": {
+    "literal": "narrativa"
+  },
+  "narratives": {
+    "literal": "narrativas"
+  },
+  "nations": {
+    "literal": "nações"
+  },
+  "nature": {
+    "literal": "natureza",
+    "contextual": "tipo ou caráter de algo"
+  },
+  "navigate": {
+    "literal": "navegar",
+    "contextual": "lidar com uma situação"
+  },
+  "near": {
+    "literal": "perto"
+  },
+  "necessary": {
+    "literal": "necessário"
+  },
+  "necessity": {
+    "literal": "necessidade"
+  },
+  "need": {
+    "literal": "necessidade"
+  },
+  "negative": {
+    "literal": "negativo"
+  },
+  "network": {
+    "literal": "rede"
+  },
+  "networks": {
+    "literal": "redes"
+  },
+  "new": {
+    "literal": "novo"
+  },
+  "news": {
+    "literal": "notícias"
+  },
+  "next": {
+    "literal": "próximo"
+  },
+  "night": {
+    "literal": "noite"
+  },
+  "no": {
+    "literal": "não"
+  },
+  "norse": {
+    "literal": "nórdico"
+  },
+  "north": {
+    "literal": "norte"
+  },
+  "not": {
+    "literal": "não"
+  },
+  "novel": {
+    "literal": "romance",
+    "contextual": "inovador"
+  },
+  "now": {
+    "literal": "agora"
+  },
+  "objective": {
+    "literal": "objetivo"
+  },
+  "occurs": {
+    "literal": "ocorre"
+  },
+  "ocean": {
+    "literal": "oceano"
+  },
+  "of": {
+    "literal": "de"
+  },
+  "off": {
+    "literal": "desligado",
+    "contextual": "afastado"
+  },
+  "offer": {
+    "literal": "oferecer"
+  },
+  "offering": {
+    "literal": "oferecendo",
+    "contextual": "oferta"
+  },
+  "offers": {
+    "literal": "oferece"
+  },
+  "office": {
+    "literal": "escritório"
+  },
+  "often": {
+    "literal": "frequentemente"
+  },
+  "on": {
+    "literal": "em"
+  },
+  "once": {
+    "literal": "uma vez"
+  },
+  "one": {
+    "literal": "um"
+  },
+  "online": {
+    "literal": "pela internet"
+  },
+  "only": {
+    "literal": "apenas"
+  },
+  "operate": {
+    "literal": "operar"
+  },
+  "operational": {
+    "literal": "operacional"
+  },
+  "opinion": {
+    "literal": "opinião"
+  },
+  "opportunities": {
+    "literal": "oportunidades"
+  },
+  "opportunity": {
+    "literal": "oportunidade"
+  },
+  "option": {
+    "literal": "opção"
+  },
+  "or": {
+    "literal": "ou"
+  },
+  "organic": {
+    "literal": "orgânico"
+  },
+  "organizations": {
+    "literal": "organizações"
+  },
+  "other": {
+    "literal": "outro"
+  },
+  "others": {
+    "literal": "outros"
+  },
+  "our": {
+    "literal": "nosso"
+  },
+  "out": {
+    "literal": "fora"
+  },
+  "outside": {
+    "literal": "fora",
+    "contextual": "externo"
+  },
+  "over": {
+    "literal": "sobre"
+  },
+  "overall": {
+    "literal": "geral",
+    "contextual": "no geral"
+  },
+  "own": {
+    "literal": "próprio"
+  },
+  "pace": {
+    "literal": "ritmo"
+  },
+  "pandemic": {
+    "literal": "pandemia"
+  },
+  "parking": {
+    "literal": "estacionamento"
+  },
+  "part": {
+    "literal": "parte",
+    "contextual": "participar"
+  },
+  "participation": {
+    "literal": "participação"
+  },
+  "particularly": {
+    "literal": "particularmente"
+  },
+  "passage": {
+    "literal": "trecho",
+    "contextual": "em textos, passage costuma ser “trecho” ou “passagem”"
+  },
+  "passive": {
+    "literal": "passivo"
+  },
+  "past": {
+    "literal": "passado",
+    "contextual": "além de"
+  },
+  "path": {
+    "literal": "caminho"
+  },
+  "pattern": {
+    "literal": "padrão"
+  },
+  "patterns": {
+    "literal": "padrões"
+  },
+  "pay": {
+    "literal": "pagar"
+  },
+  "peers": {
+    "literal": "colegas"
+  },
+  "people": {
+    "literal": "pessoas"
+  },
+  "performance": {
+    "literal": "desempenho"
+  },
+  "period": {
+    "literal": "período"
+  },
+  "person": {
+    "literal": "pessoa"
+  },
+  "personal": {
+    "literal": "pessoal"
+  },
+  "perspective": {
+    "literal": "perspectiva"
+  },
+  "phenomenon": {
+    "literal": "fenômeno"
+  },
+  "physical": {
+    "literal": "físico"
+  },
+  "picture": {
+    "literal": "imagem"
+  },
+  "pivotal": {
+    "literal": "crucial"
+  },
+  "place": {
+    "literal": "lugar"
+  },
+  "planet": {
+    "literal": "planeta"
+  },
+  "planners": {
+    "literal": "planejadores"
+  },
+  "planning": {
+    "literal": "planejamento",
+    "contextual": "planejando"
+  },
+  "plastic": {
+    "literal": "plástico"
+  },
+  "platforms": {
+    "literal": "plataformas"
+  },
+  "play": {
+    "literal": "jogar",
+    "contextual": "desempenhar um papel"
+  },
+  "playing": {
+    "literal": "jogando"
+  },
+  "plays": {
+    "literal": "peças",
+    "contextual": "desempenha um papel"
+  },
+  "point": {
+    "literal": "ponto",
+    "contextual": "argumento principal"
+  },
+  "policies": {
+    "literal": "políticas"
+  },
+  "policy": {
+    "literal": "política",
+    "contextual": "diretriz"
+  },
+  "policymakers": {
+    "literal": "formuladores de políticas"
+  },
+  "political": {
+    "literal": "político"
+  },
+  "pollution": {
+    "literal": "poluição"
+  },
+  "population": {
+    "literal": "população"
+  },
+  "populations": {
+    "literal": "populações"
+  },
+  "poses": {
+    "literal": "apresenta"
+  },
+  "position": {
+    "literal": "posição"
+  },
+  "positive": {
+    "literal": "positivo"
+  },
+  "possess": {
+    "literal": "possuir"
+  },
+  "potential": {
+    "literal": "potencial"
+  },
+  "potentially": {
+    "literal": "potencialmente"
+  },
+  "power": {
+    "literal": "poder"
+  },
+  "powerful": {
+    "literal": "poderoso"
+  },
+  "practical": {
+    "literal": "prático"
+  },
+  "practice": {
+    "literal": "prática"
+  },
+  "practices": {
+    "literal": "práticas"
+  },
+  "precise": {
+    "literal": "preciso"
+  },
+  "presents": {
+    "literal": "apresenta",
+    "contextual": "presentes"
+  },
+  "pressure": {
+    "literal": "pressão",
+    "contextual": "pressionar"
+  },
+  "prevent": {
+    "literal": "impedir"
+  },
+  "previously": {
+    "literal": "anteriormente"
+  },
+  "price": {
+    "literal": "preço"
+  },
+  "pricing": {
+    "literal": "precificação"
+  },
+  "primarily": {
+    "literal": "principalmente"
+  },
+  "primary": {
+    "literal": "principal"
+  },
+  "prioritize": {
+    "literal": "priorizar"
+  },
+  "prioritizing": {
+    "literal": "priorizando"
+  },
+  "privacy": {
+    "literal": "privacidade"
+  },
+  "private": {
+    "literal": "privado"
+  },
+  "problem": {
+    "literal": "problema"
+  },
+  "problems": {
+    "literal": "problemas"
+  },
+  "process": {
+    "literal": "processo"
+  },
+  "processes": {
+    "literal": "processos",
+    "contextual": "processa"
+  },
+  "processing": {
+    "literal": "processamento"
+  },
+  "produce": {
+    "literal": "produzir",
+    "contextual": "produtos agrícolas"
+  },
+  "product": {
+    "literal": "produto"
+  },
+  "production": {
+    "literal": "produção"
+  },
+  "productivity": {
+    "literal": "produtividade"
+  },
+  "products": {
+    "literal": "produtos"
+  },
+  "professional": {
+    "literal": "profissional"
+  },
+  "professor": {
+    "literal": "docente"
+  },
+  "profound": {
+    "literal": "profundo"
+  },
+  "programs": {
+    "literal": "programas",
+    "contextual": "programa de computador"
+  },
+  "progress": {
+    "literal": "progresso"
+  },
+  "project": {
+    "literal": "projeto"
+  },
+  "projects": {
+    "literal": "projetos",
+    "contextual": "projeta"
+  },
+  "promote": {
+    "literal": "promover"
+  },
+  "promoting": {
+    "literal": "promovendo"
+  },
+  "property": {
+    "literal": "propriedade",
+    "contextual": "imóvel"
+  },
+  "proponents": {
+    "literal": "defensores"
+  },
+  "protect": {
+    "literal": "proteger"
+  },
+  "protection": {
+    "literal": "proteção"
+  },
+  "prove": {
+    "literal": "provar"
+  },
+  "provide": {
+    "literal": "fornecer"
+  },
+  "provided": {
+    "literal": "fornecido",
+    "contextual": "desde que"
+  },
+  "provides": {
+    "literal": "fornece"
+  },
+  "providing": {
+    "literal": "fornecendo"
+  },
+  "psychological": {
+    "literal": "psicológico"
+  },
+  "psychology": {
+    "literal": "psicologia"
+  },
+  "public": {
+    "literal": "público"
+  },
+  "purchase": {
+    "literal": "compra"
+  },
+  "purely": {
+    "literal": "puramente"
+  },
+  "quality": {
+    "literal": "qualidade"
+  },
+  "question": {
+    "literal": "pergunta"
+  },
+  "questions": {
+    "literal": "perguntas",
+    "contextual": "questiona"
+  },
+  "quickly": {
+    "literal": "rapidamente"
+  },
+  "quiet": {
+    "literal": "silencioso"
+  },
+  "quite": {
+    "literal": "bastante",
+    "contextual": "completamente"
+  },
+  "raises": {
+    "literal": "aumenta"
+  },
+  "rapid": {
+    "literal": "rápido"
+  },
+  "rapidly": {
+    "literal": "rapidamente"
+  },
+  "rarely": {
+    "literal": "raramente"
+  },
+  "rates": {
+    "literal": "taxas"
+  },
+  "rather": {
+    "literal": "bastante"
+  },
+  "reach": {
+    "literal": "alcançar"
+  },
+  "reaction": {
+    "literal": "reação"
+  },
+  "read": {
+    "literal": "ler",
+    "contextual": "pronúncia no passado: leu"
+  },
+  "reader": {
+    "literal": "leitor"
+  },
+  "reading": {
+    "literal": "leitura"
+  },
+  "reality": {
+    "literal": "realidade"
+  },
+  "really": {
+    "literal": "realmente"
+  },
+  "recent": {
+    "literal": "recente"
+  },
+  "records": {
+    "literal": "registros"
+  },
+  "reduce": {
+    "literal": "reduzir"
+  },
+  "reduced": {
+    "literal": "reduzido"
+  },
+  "reduces": {
+    "literal": "reduz"
+  },
+  "reducing": {
+    "literal": "reduzindo"
+  },
+  "regarding": {
+    "literal": "sobre"
+  },
+  "regions": {
+    "literal": "regiões"
+  },
+  "regulation": {
+    "literal": "regulamentação",
+    "contextual": "regulação"
+  },
+  "regulations": {
+    "literal": "regulamentos"
+  },
+  "regulatory": {
+    "literal": "regulatório"
+  },
+  "relationship": {
+    "literal": "relação"
+  },
+  "relatively": {
+    "literal": "relativamente"
+  },
+  "relevant": {
+    "literal": "relevante"
+  },
+  "reliable": {
+    "literal": "confiável"
+  },
+  "relied": {
+    "literal": "confiou"
+  },
+  "relies": {
+    "literal": "depende"
+  },
+  "rely": {
+    "literal": "depender"
+  },
+  "relying": {
+    "literal": "dependendo"
+  },
+  "remain": {
+    "literal": "permanecer"
+  },
+  "remains": {
+    "literal": "permanece"
+  },
+  "remote": {
+    "literal": "remoto",
+    "contextual": "distante"
+  },
+  "renewable": {
+    "literal": "renovável"
+  },
+  "represents": {
+    "literal": "representa"
+  },
+  "require": {
+    "literal": "exigir"
+  },
+  "required": {
+    "literal": "necessário"
+  },
+  "requires": {
+    "literal": "requer"
+  },
+  "requiring": {
+    "literal": "exigindo"
+  },
+  "research": {
+    "literal": "pesquisa"
+  },
+  "researchers": {
+    "literal": "pesquisadores"
+  },
+  "residents": {
+    "literal": "moradores"
+  },
+  "resilience": {
+    "literal": "resiliência"
+  },
+  "resources": {
+    "literal": "recursos"
+  },
+  "response": {
+    "literal": "resposta"
+  },
+  "responsibility": {
+    "literal": "responsabilidade"
+  },
+  "responsible": {
+    "literal": "responsável"
+  },
+  "rest": {
+    "literal": "resto",
+    "contextual": "descanso"
+  },
+  "result": {
+    "literal": "resultado"
+  },
+  "results": {
+    "literal": "resultados"
+  },
+  "revealed": {
+    "literal": "revelou"
+  },
+  "revenue": {
+    "literal": "receita"
+  },
+  "revolution": {
+    "literal": "revolução"
+  },
+  "rhythm": {
+    "literal": "ritmo"
+  },
+  "right": {
+    "literal": "direito",
+    "contextual": "correto"
+  },
+  "rights": {
+    "literal": "direitos"
+  },
+  "rigid": {
+    "literal": "rígido"
+  },
+  "rigorous": {
+    "literal": "rigoroso"
+  },
+  "rise": {
+    "literal": "aumento"
+  },
+  "rising": {
+    "literal": "crescente"
+  },
+  "risk": {
+    "literal": "risco"
+  },
+  "risks": {
+    "literal": "riscos"
+  },
+  "road": {
+    "literal": "estrada",
+    "contextual": "caminho"
+  },
+  "robust": {
+    "literal": "robusto"
+  },
+  "role": {
+    "literal": "papel"
+  },
+  "routine": {
+    "literal": "rotina"
+  },
+  "safety": {
+    "literal": "segurança"
+  },
+  "said": {
+    "literal": "disse"
+  },
+  "sales": {
+    "literal": "vendas"
+  },
+  "same": {
+    "literal": "mesmo"
+  },
+  "satisfaction": {
+    "literal": "satisfação"
+  },
+  "say": {
+    "literal": "dizer",
+    "contextual": "por exemplo"
+  },
+  "schedules": {
+    "literal": "horários"
+  },
+  "scholars": {
+    "literal": "acadêmicos"
+  },
+  "school": {
+    "literal": "escola"
+  },
+  "schools": {
+    "literal": "escolas"
+  },
+  "science": {
+    "literal": "ciência"
+  },
+  "scientific": {
+    "literal": "científico"
+  },
+  "scientists": {
+    "literal": "cientistas"
+  },
+  "second": {
+    "literal": "segundo"
+  },
+  "secondary": {
+    "literal": "secundário"
+  },
+  "security": {
+    "literal": "segurança"
+  },
+  "see": {
+    "literal": "ver"
+  },
+  "seen": {
+    "literal": "visto"
+  },
+  "sense": {
+    "literal": "sentido"
+  },
+  "serve": {
+    "literal": "servir"
+  },
+  "serves": {
+    "literal": "serve"
+  },
+  "service": {
+    "literal": "serviço"
+  },
+  "services": {
+    "literal": "serviços"
+  },
+  "set": {
+    "literal": "conjunto"
+  },
+  "setting": {
+    "literal": "contexto"
+  },
+  "several": {
+    "literal": "vários"
+  },
+  "severe": {
+    "literal": "grave"
+  },
+  "share": {
+    "literal": "compartilhar"
+  },
+  "shared": {
+    "literal": "compartilhado"
+  },
+  "shift": {
+    "literal": "mudança"
+  },
+  "shifted": {
+    "literal": "mudou",
+    "contextual": "deslocou"
+  },
+  "shifting": {
+    "literal": "mudando",
+    "contextual": "deslocando"
+  },
+  "shifts": {
+    "literal": "mudanças",
+    "contextual": "turnos de trabalho"
+  },
+  "should": {
+    "literal": "deveria"
+  },
+  "show": {
+    "literal": "mostrar"
+  },
+  "significant": {
+    "literal": "significativo"
+  },
+  "significantly": {
+    "literal": "significativamente"
+  },
+  "simple": {
+    "literal": "simples"
+  },
+  "simply": {
+    "literal": "simplesmente"
+  },
+  "simultaneously": {
+    "literal": "simultaneamente"
+  },
+  "since": {
+    "literal": "desde"
+  },
+  "single": {
+    "literal": "único"
+  },
+  "size": {
+    "literal": "tamanho"
+  },
+  "skill": {
+    "literal": "habilidade"
+  },
+  "skills": {
+    "literal": "habilidades"
+  },
+  "skin": {
+    "literal": "pele"
+  },
+  "sleep": {
+    "literal": "sono"
+  },
+  "small": {
+    "literal": "pequeno"
+  },
+  "smart": {
+    "literal": "inteligente",
+    "contextual": "tecnologia conectada"
+  },
+  "so": {
+    "literal": "então"
+  },
+  "societal": {
+    "literal": "social"
+  },
+  "societies": {
+    "literal": "sociedades"
+  },
+  "society": {
+    "literal": "sociedade"
+  },
+  "soft": {
+    "literal": "macio"
+  },
+  "soil": {
+    "literal": "solo"
+  },
+  "solely": {
+    "literal": "somente"
+  },
+  "solution": {
+    "literal": "solução"
+  },
+  "solutions": {
+    "literal": "soluções"
+  },
+  "some": {
+    "literal": "alguns"
+  },
+  "someone": {
+    "literal": "alguém"
+  },
+  "sometimes": {
+    "literal": "às vezes"
+  },
+  "sophisticated": {
+    "literal": "sofisticado"
+  },
+  "source": {
+    "literal": "fonte"
+  },
+  "sources": {
+    "literal": "fontes",
+    "contextual": "origens"
+  },
+  "space": {
+    "literal": "espaço"
+  },
+  "spaces": {
+    "literal": "espaços"
+  },
+  "specialized": {
+    "literal": "especializado"
+  },
+  "species": {
+    "literal": "espécies"
+  },
+  "specific": {
+    "literal": "específico"
+  },
+  "specifically": {
+    "literal": "especificamente"
+  },
+  "speed": {
+    "literal": "velocidade",
+    "contextual": "acelerar"
+  },
+  "stability": {
+    "literal": "estabilidade"
+  },
+  "staff": {
+    "literal": "equipe"
+  },
+  "standard": {
+    "literal": "padrão"
+  },
+  "standards": {
+    "literal": "padrões",
+    "contextual": "normas"
+  },
+  "state": {
+    "literal": "estado",
+    "contextual": "afirmar"
+  },
+  "status": {
+    "literal": "situação",
+    "contextual": "condição social"
+  },
+  "step": {
+    "literal": "etapa"
+  },
+  "still": {
+    "literal": "ainda"
+  },
+  "storage": {
+    "literal": "armazenamento"
+  },
+  "strategic": {
+    "literal": "estratégico"
+  },
+  "strategies": {
+    "literal": "estratégias"
+  },
+  "strategy": {
+    "literal": "estratégia"
+  },
+  "stress": {
+    "literal": "estresse",
+    "contextual": "enfatizar"
+  },
+  "strict": {
+    "literal": "rigoroso"
+  },
+  "strictly": {
+    "literal": "estritamente"
+  },
+  "stronger": {
+    "literal": "mais forte"
+  },
+  "structural": {
+    "literal": "estrutural"
+  },
+  "structure": {
+    "literal": "estrutura",
+    "contextual": "estruturar"
+  },
+  "structured": {
+    "literal": "estruturado"
+  },
+  "structures": {
+    "literal": "estruturas"
+  },
+  "struggle": {
+    "literal": "luta",
+    "contextual": "ter dificuldade"
+  },
+  "student": {
+    "literal": "estudante"
+  },
+  "students": {
+    "literal": "estudantes"
+  },
+  "studies": {
+    "literal": "estudos"
+  },
+  "study": {
+    "literal": "estudo"
+  },
+  "subject": {
+    "literal": "assunto"
+  },
+  "substantial": {
+    "literal": "substancial"
+  },
+  "success": {
+    "literal": "sucesso"
+  },
+  "successful": {
+    "literal": "bem-sucedido"
+  },
+  "such": {
+    "literal": "tal"
+  },
+  "suggest": {
+    "literal": "sugerir"
+  },
+  "suggesting": {
+    "literal": "sugerindo"
+  },
+  "suggests": {
+    "literal": "sugere"
+  },
+  "supply": {
+    "literal": "oferta",
+    "contextual": "fornecer"
+  },
+  "support": {
+    "literal": "apoio"
+  },
+  "surface": {
+    "literal": "superfície",
+    "contextual": "surgir"
+  },
+  "sustainability": {
+    "literal": "sustentabilidade"
+  },
+  "sustainable": {
+    "literal": "sustentável"
+  },
+  "system": {
+    "literal": "sistema"
+  },
+  "systems": {
+    "literal": "sistemas"
+  },
+  "take": {
+    "literal": "pegar",
+    "contextual": "levar tempo"
+  },
+  "tasks": {
+    "literal": "tarefas"
+  },
+  "teaching": {
+    "literal": "ensino"
+  },
+  "tech": {
+    "literal": "tecnologia"
+  },
+  "technical": {
+    "literal": "técnico"
+  },
+  "technological": {
+    "literal": "tecnológico"
+  },
+  "technologies": {
+    "literal": "tecnologias"
+  },
+  "technology": {
+    "literal": "tecnologia"
+  },
+  "temperatures": {
+    "literal": "temperaturas"
+  },
+  "temporary": {
+    "literal": "temporário"
+  },
+  "tend": {
+    "literal": "tender",
+    "contextual": "tender a fazer algo"
+  },
+  "term": {
+    "literal": "termo"
+  },
+  "text": {
+    "literal": "texto"
+  },
+  "texts": {
+    "literal": "textos"
+  },
+  "than": {
+    "literal": "do que"
+  },
+  "that": {
+    "literal": "que"
+  },
+  "the": {
+    "literal": "o"
+  },
+  "their": {
+    "literal": "deles"
+  },
+  "them": {
+    "literal": "eles"
+  },
+  "themselves": {
+    "literal": "eles mesmos"
+  },
+  "then": {
+    "literal": "então"
+  },
+  "theory": {
+    "literal": "teoria"
+  },
+  "there": {
+    "literal": "lá"
+  },
+  "thereby": {
+    "literal": "assim"
+  },
+  "therefore": {
+    "literal": "portanto"
+  },
+  "these": {
+    "literal": "estes"
+  },
+  "they": {
+    "literal": "eles"
+  },
+  "think": {
+    "literal": "pensar"
+  },
+  "thinking": {
+    "literal": "pensamento",
+    "contextual": "pensando"
+  },
+  "this": {
+    "literal": "este"
+  },
+  "those": {
+    "literal": "aqueles"
+  },
+  "though": {
+    "literal": "embora",
+    "contextual": "porém"
+  },
+  "thousands": {
+    "literal": "milhares"
+  },
+  "three": {
+    "literal": "três"
+  },
+  "through": {
+    "literal": "por meio"
+  },
+  "throughout": {
+    "literal": "ao longo de"
+  },
+  "thus": {
+    "literal": "portanto"
+  },
+  "time": {
+    "literal": "tempo"
+  },
+  "times": {
+    "literal": "vezes",
+    "contextual": "tempos"
+  },
+  "tiny": {
+    "literal": "minúsculo"
+  },
+  "to": {
+    "literal": "para"
+  },
+  "today": {
+    "literal": "hoje"
+  },
+  "together": {
+    "literal": "juntos"
+  },
+  "too": {
+    "literal": "também",
+    "contextual": "demais"
+  },
+  "tool": {
+    "literal": "ferramenta"
+  },
+  "tools": {
+    "literal": "ferramentas"
+  },
+  "top": {
+    "literal": "topo",
+    "contextual": "principal"
+  },
+  "toward": {
+    "literal": "em direção a"
+  },
+  "towards": {
+    "literal": "em direção a"
+  },
+  "trade": {
+    "literal": "comércio",
+    "contextual": "trocar"
+  },
+  "traditional": {
+    "literal": "tradicional"
+  },
+  "traditionally": {
+    "literal": "tradicionalmente"
+  },
+  "traffic": {
+    "literal": "trânsito"
+  },
+  "training": {
+    "literal": "treinamento"
+  },
+  "transformed": {
+    "literal": "transformado"
+  },
+  "transition": {
+    "literal": "transição"
+  },
+  "transport": {
+    "literal": "transporte",
+    "contextual": "transportar"
+  },
+  "transportation": {
+    "literal": "transporte"
+  },
+  "travel": {
+    "literal": "viajar"
+  },
+  "true": {
+    "literal": "verdadeiro"
+  },
+  "turn": {
+    "literal": "virada"
+  },
+  "turning": {
+    "literal": "virando"
+  },
+  "two": {
+    "literal": "dois"
+  },
+  "typically": {
+    "literal": "geralmente"
+  },
+  "ultimately": {
+    "literal": "por fim"
+  },
+  "under": {
+    "literal": "sob",
+    "contextual": "menos de"
+  },
+  "understand": {
+    "literal": "entender"
+  },
+  "understanding": {
+    "literal": "compreensão"
+  },
+  "unique": {
+    "literal": "único"
+  },
+  "united": {
+    "literal": "unido"
+  },
+  "universities": {
+    "literal": "universidades"
+  },
+  "university": {
+    "literal": "universidade"
+  },
+  "unlike": {
+    "literal": "ao contrário"
+  },
+  "until": {
+    "literal": "até"
+  },
+  "up": {
+    "literal": "acima"
+  },
+  "urban": {
+    "literal": "urbano"
+  },
+  "us": {
+    "literal": "nos"
+  },
+  "use": {
+    "literal": "usar"
+  },
+  "used": {
+    "literal": "usado"
+  },
+  "user": {
+    "literal": "usuário"
+  },
+  "users": {
+    "literal": "usuários"
+  },
+  "using": {
+    "literal": "usando"
+  },
+  "usually": {
+    "literal": "geralmente"
+  },
+  "utilized": {
+    "literal": "utilizado"
+  },
+  "valuable": {
+    "literal": "valioso"
+  },
+  "value": {
+    "literal": "valor"
+  },
+  "values": {
+    "literal": "valores"
+  },
+  "various": {
+    "literal": "vários"
+  },
+  "vast": {
+    "literal": "vasto"
+  },
+  "vehicle": {
+    "literal": "veículo"
+  },
+  "vehicles": {
+    "literal": "veículos"
+  },
+  "very": {
+    "literal": "muito"
+  },
+  "viable": {
+    "literal": "viável"
+  },
+  "victorian": {
+    "literal": "vitoriano"
+  },
+  "view": {
+    "literal": "visão"
+  },
+  "viewed": {
+    "literal": "considerado",
+    "contextual": "visto"
+  },
+  "vision": {
+    "literal": "visão"
+  },
+  "voice": {
+    "literal": "voz"
+  },
+  "volcanic": {
+    "literal": "vulcânico"
+  },
+  "vulnerable": {
+    "literal": "vulnerável"
+  },
+  "wake": {
+    "literal": "acordar",
+    "contextual": "esteira de uma embarcação"
+  },
+  "waking": {
+    "literal": "acordando"
+  },
+  "want": {
+    "literal": "querer"
+  },
+  "was": {
+    "literal": "era"
+  },
+  "waste": {
+    "literal": "desperdício",
+    "contextual": "desperdiçar"
+  },
+  "water": {
+    "literal": "água"
+  },
+  "way": {
+    "literal": "maneira"
+  },
+  "ways": {
+    "literal": "maneiras"
+  },
+  "we": {
+    "literal": "nós"
+  },
+  "wealth": {
+    "literal": "riqueza"
+  },
+  "wealthy": {
+    "literal": "rico"
+  },
+  "well": {
+    "literal": "bem",
+    "contextual": "poço"
+  },
+  "well-being": {
+    "literal": "bem-estar"
+  },
+  "were": {
+    "literal": "eram"
+  },
+  "what": {
+    "literal": "o que"
+  },
+  "when": {
+    "literal": "quando"
+  },
+  "where": {
+    "literal": "onde"
+  },
+  "whether": {
+    "literal": "se",
+    "contextual": "se... ou não"
+  },
+  "which": {
+    "literal": "qual"
+  },
+  "while": {
+    "literal": "enquanto"
+  },
+  "who": {
+    "literal": "quem"
+  },
+  "why": {
+    "literal": "por que"
+  },
+  "widely": {
+    "literal": "amplamente"
+  },
+  "widespread": {
+    "literal": "generalizado"
+  },
+  "will": {
+    "literal": "irá"
+  },
+  "wind": {
+    "literal": "vento"
+  },
+  "with": {
+    "literal": "com"
+  },
+  "within": {
+    "literal": "dentro de"
+  },
+  "without": {
+    "literal": "sem"
+  },
+  "women": {
+    "literal": "mulheres"
+  },
+  "words": {
+    "literal": "palavras"
+  },
+  "work": {
+    "literal": "trabalho"
+  },
+  "workers": {
+    "literal": "trabalhadores"
+  },
+  "workforce": {
+    "literal": "força de trabalho"
+  },
+  "working": {
+    "literal": "trabalhando"
+  },
+  "workplace": {
+    "literal": "local de trabalho"
+  },
+  "works": {
+    "literal": "obras"
+  },
+  "world": {
+    "literal": "mundo"
+  },
+  "worldwide": {
+    "literal": "mundialmente"
+  },
+  "would": {
+    "literal": "iria"
+  },
+  "writing": {
+    "literal": "escrita",
+    "contextual": "redação"
+  },
+  "written": {
+    "literal": "escrito"
+  },
+  "year": {
+    "literal": "ano"
+  },
+  "years": {
+    "literal": "anos"
+  },
+  "yet": {
+    "literal": "ainda"
+  },
+  "you": {
+    "literal": "você"
+  },
+  "young": {
+    "literal": "jovem"
+  },
+  "your": {
+    "literal": "seu"
+  },
+  "zones": {
+    "literal": "zonas"
+  }
+}
