@@ -1,0 +1,61 @@
+// Pack studie-plus — texto completo com bolhas de palavra + cards por frase.
+// Um único ponto de integração para os motores: campo elegível + recursos ativos
+// → frases em PlusPhraseCard; só bolhas → PlusWordText; pack desligado → texto
+// simples idêntico ao anterior (regressão zero).
+
+import { PlusPhraseCard } from "./PlusPhraseCard";
+import { PlusWordText } from "./PlusWordText";
+import { plusFieldPolicy, plusWordPolicy, type PlusPhase } from "@/lib/plus/plusAudio";
+import { splitSentences } from "@/lib/plus/sentences";
+import { useAppState } from "@/lib/useAppState";
+import type { TaskType } from "@/lib/pte/types";
+
+export function PlusText({
+  text,
+  type,
+  field,
+  phase,
+  className,
+  wordBubbles = true,
+}: {
+  text: string;
+  type: TaskType;
+  field: string;
+  phase: PlusPhase;
+  className?: string;
+  wordBubbles?: boolean | undefined;
+}) {
+  const { settings } = useAppState();
+  const policy = plusFieldPolicy(type, field, phase);
+  const wordOk = plusWordPolicy(type, field, phase);
+
+  if (!policy.phraseTranslation && !policy.phraseAudio) {
+    return wordBubbles ? (
+      <PlusWordText text={text} type={type} field={field} phase={phase} className={className} />
+    ) : (
+      <span className={className}>{text}</span>
+    );
+  }
+
+  const sentences = splitSentences(text);
+  let offset = 0;
+  return (
+    <span className={className}>
+      {sentences.map((sentence) => {
+        const index = offset++;
+        return (
+          <span key={index} className="mb-1 block">
+            <PlusPhraseCard
+              sentence={sentence}
+              index={index}
+              type={type}
+              field={field}
+              phase={phase}
+              wordBubbles={wordBubbles && wordOk}
+            />{" "}
+          </span>
+        );
+      })}
+    </span>
+  );
+}

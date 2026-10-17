@@ -1,9 +1,9 @@
 // Pack studie-plus — card de tradução por frase (PRD §13.1/§13.2).
 // A linha em inglês expande SOMENTE por toque; 🔊 fica na linha da frase em
 // inglês, fora da expansão, e fala o inglês original. Sem tradução carregada
-// (ou origem mudada) → estado vazio honesto, nunca tradução errada.
+// (ou origem mudada — h não bate) → estado vazio honesto, nunca tradução errada.
 
-import { useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 import { PlusSpeakButton } from "./PlusSpeakButton";
 import { PlusWordText } from "./PlusWordText";
@@ -12,6 +12,19 @@ import { plusFieldPolicy, type PlusPhase } from "@/lib/plus/plusAudio";
 import { lookupPhrase } from "@/lib/plus/phrases";
 import { useAppState } from "@/lib/useAppState";
 import type { TaskType } from "@/lib/pte/types";
+
+const PlusQuestionContext = createContext<string | null>(null);
+
+/** Motores envolvem a questão com o provider; o card lê o qid daqui. */
+export function PlusQuestionProvider({
+  qid,
+  children,
+}: {
+  qid: string;
+  children: React.ReactNode;
+}) {
+  return <PlusQuestionContext.Provider value={qid}>{children}</PlusQuestionContext.Provider>;
+}
 
 export function PlusPhraseCard({
   sentence,
@@ -30,6 +43,7 @@ export function PlusPhraseCard({
   wordBubbles?: boolean | undefined;
 }) {
   const { settings } = useAppState();
+  const qid = useContext(PlusQuestionContext) ?? "";
   const policy = plusFieldPolicy(type, field, phase);
   const [expanded, setExpanded] = useState(false);
   const [lookup, setLookup] = useState<{ literal: string; contextual: string } | null | undefined>(
@@ -42,12 +56,12 @@ export function PlusPhraseCard({
     setLookup(undefined);
     loadPhrases(type).then((file) => {
       if (cancelled) return;
-      setLookup(lookupPhrase(file, questionIdOf(type), field, index, sentence));
+      setLookup(lookupPhrase(file, qid, field, index, sentence));
     });
     return () => {
       cancelled = true;
     };
-  }, [policy.phraseTranslation, expanded, type, field, index, sentence]);
+  }, [policy.phraseTranslation, expanded, type, field, index, sentence, qid]);
 
   // nenhum recurso de frase ativo → só as bolhas de palavra / texto simples
   if (!policy.phraseTranslation && !policy.phraseAudio) {
@@ -77,9 +91,7 @@ export function PlusPhraseCard({
             sentence
           )}
         </button>
-        {policy.phraseAudio ? (
-          <PlusSpeakButton text={sentence} label={`Pronunciar a frase em inglês`} />
-        ) : null}
+        {policy.phraseAudio ? <PlusSpeakButton text={sentence} label="Pronunciar a frase em inglês" /> : null}
       </span>
       {expanded && policy.phraseTranslation ? (
         <span
@@ -102,24 +114,4 @@ export function PlusPhraseCard({
       ) : null}
     </span>
   );
-}
-
-// o qid vem da questão renderizada; o componente recebe via contexto para não
-// duplicar props nos motores — implementado em PlusText, que injeta o qid aqui.
-import { createContext, useContext } from "react";
-
-const PlusQuestionContext = createContext<string | null>(null);
-
-export function PlusQuestionProvider({
-  qid,
-  children,
-}: {
-  qid: string;
-  children: React.ReactNode;
-}) {
-  return <PlusQuestionContext.Provider value={qid}>{children}</PlusQuestionContext.Provider>;
-}
-
-function questionIdOf(_type: TaskType): string {
-  return useContext(PlusQuestionContext) ?? "";
 }
