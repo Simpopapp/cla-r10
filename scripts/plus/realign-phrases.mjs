@@ -62,11 +62,15 @@ for (const type of TYPES) {
   const phrases = JSON.parse(readFileSync(file, "utf8"));
   const bank = JSON.parse(readFileSync(`src/data/pte/${type}.json`, "utf8"));
   const byId = new Map(bank.map((q) => [q.id, q]));
-  let kept = 0, dropped = 0;
+  let kept = 0,
+    dropped = 0;
   const out = {};
   for (const [qid, fields] of Object.entries(phrases)) {
     const item = byId.get(qid);
-    if (!item) { console.error(`qid órfão: ${qid}`); continue; }
+    if (!item) {
+      console.error(`qid órfão: ${qid}`);
+      continue;
+    }
     for (const [field, entries] of Object.entries(fields)) {
       const source = item.data[field];
       const text = Array.isArray(source) ? source.join(" ") : source;
@@ -76,13 +80,17 @@ for (const type of TYPES) {
       const aligned = [];
       for (const sentence of sentences) {
         const entry = byHash.get(hashSentence(sentence));
-        if (entry) { aligned.push(entry); kept++; }
-        else { dropped++; aligned.push(null); }
+        if (entry) {
+          aligned.push(entry);
+          kept++;
+        } else {
+          dropped++;
+          aligned.push(null);
+        }
       }
       // buracos viram null — lookupPhrase devolve "Tradução não disponível"
       out[qid] ??= {};
       out[qid][field] = aligned;
-
     }
   }
   const sorted = Object.fromEntries(Object.entries(out).sort(([a], [b]) => a.localeCompare(b)));

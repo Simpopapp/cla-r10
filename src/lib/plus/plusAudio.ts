@@ -32,11 +32,26 @@ const POLICY: Record<TaskType, Record<string, FieldRule>> = {
   repeat_sentence: { transcript: { phase: "post", nativeAudio: true } },
   describe_image: { facts: { phase: "pre", nativeAudio: false } },
   retell_lecture: { transcript: { phase: "post", nativeAudio: true } },
-  answer_short: { question: { phase: "pre", nativeAudio: true }, answers: { phase: "post", nativeAudio: false } },
-  sgd: { turns: { phase: "pre", nativeAudio: true }, sample: { phase: "post", nativeAudio: false } },
-  rts: { scenario: { phase: "pre", nativeAudio: true }, sample: { phase: "post", nativeAudio: false } },
-  swt: { text: { phase: "pre", nativeAudio: false }, sample: { phase: "post", nativeAudio: false } },
-  write_essay: { prompt: { phase: "pre", nativeAudio: false }, sample: { phase: "post", nativeAudio: false } },
+  answer_short: {
+    question: { phase: "pre", nativeAudio: true },
+    answers: { phase: "post", nativeAudio: false },
+  },
+  sgd: {
+    turns: { phase: "pre", nativeAudio: true },
+    sample: { phase: "post", nativeAudio: false },
+  },
+  rts: {
+    scenario: { phase: "pre", nativeAudio: true },
+    sample: { phase: "post", nativeAudio: false },
+  },
+  swt: {
+    text: { phase: "pre", nativeAudio: false },
+    sample: { phase: "post", nativeAudio: false },
+  },
+  write_essay: {
+    prompt: { phase: "pre", nativeAudio: false },
+    sample: { phase: "post", nativeAudio: false },
+  },
   read_fib_dropdown: { passage: { phase: "pre", nativeAudio: false } },
   read_mcq_multi: {
     passage: { phase: "pre", nativeAudio: false },
@@ -50,7 +65,10 @@ const POLICY: Record<TaskType, Record<string, FieldRule>> = {
     question: { phase: "pre", nativeAudio: false },
     explanation: { phase: "post", nativeAudio: false },
   },
-  sst: { transcript: { phase: "post", nativeAudio: true }, sample: { phase: "post", nativeAudio: false } },
+  sst: {
+    transcript: { phase: "post", nativeAudio: true },
+    sample: { phase: "post", nativeAudio: false },
+  },
   lst_mcq_multi: {
     transcript: { phase: "post", nativeAudio: true },
     explanation: { phase: "post", nativeAudio: false },
@@ -65,17 +83,16 @@ const POLICY: Record<TaskType, Record<string, FieldRule>> = {
     explanation: { phase: "post", nativeAudio: false },
   },
   lst_smw: { transcript: { phase: "post", nativeAudio: true } },
-  lst_hiw: { shown: { phase: "pre", nativeAudio: false }, spoken: { phase: "post", nativeAudio: true } },
+  lst_hiw: {
+    shown: { phase: "pre", nativeAudio: false },
+    spoken: { phase: "post", nativeAudio: true },
+  },
   wfd: { sentence: { phase: "post", nativeAudio: true } },
 };
 
 /** Política do campo na fase — all-false quando o campo não existe na fase.
  *  Campos de array usam índice: "turns[0]", "paragraphs[2]" → base "turns". */
-export function plusFieldPolicy(
-  type: TaskType,
-  field: string,
-  phase: PlusPhase,
-): PlusFieldPolicy {
+export function plusFieldPolicy(type: TaskType, field: string, phase: PlusPhase): PlusFieldPolicy {
   const rule = POLICY[type]?.[baseField(field)];
   if (!rule || rule.phase !== phase) return { phraseTranslation: false, phraseAudio: false };
   return { phraseTranslation: true, phraseAudio: !rule.nativeAudio };

@@ -13,7 +13,7 @@ let glossaryPromise: Promise<Glossary> | null = null;
 export async function loadGlossary(): Promise<Glossary> {
   if (glossaryCache) return glossaryCache;
   glossaryPromise ??= import("@/data/plus/glossary.json").then(
-    (mod) => ((mod as { default: Glossary }).default ?? (mod as unknown as Glossary)),
+    (mod) => (mod as { default: Glossary }).default ?? (mod as unknown as Glossary),
   );
   glossaryCache = await glossaryPromise;
   return glossaryCache;

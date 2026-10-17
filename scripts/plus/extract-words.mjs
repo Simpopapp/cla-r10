@@ -20,7 +20,10 @@ const norm = (raw) =>
     .replace(/^[^\w'-]+|[^\w'-]+$/g, "");
 
 function splitWords(text) {
-  return text.split(/\s+/).map(norm).filter((w) => WORD_RE.test(w) && w.length >= 2 && w.length <= 30);
+  return text
+    .split(/\s+/)
+    .map(norm)
+    .filter((w) => WORD_RE.test(w) && w.length >= 2 && w.length <= 30);
 }
 
 function fieldTexts(data, field) {
@@ -91,4 +94,3 @@ console.log(
     2,
   ),
 );
-

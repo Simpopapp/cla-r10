@@ -33,7 +33,6 @@ function lastWord(s: string): string {
   return m?.[1] ?? "";
 }
 
-
 export function sentenceCount(text: string): number {
   return splitSentences(text).length;
 }

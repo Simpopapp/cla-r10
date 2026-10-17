@@ -39,7 +39,9 @@ function hashSentence(sentence) {
 }
 
 const inItems = new Map();
-for (const f of readdirSync(WORK).filter((f) => /^in-\d+\.json$/.test(f)).sort()) {
+for (const f of readdirSync(WORK)
+  .filter((f) => /^in-\d+\.json$/.test(f))
+  .sort()) {
   for (const it of JSON.parse(readFileSync(join(WORK, f), "utf8"))) inItems.set(it.k, it);
 }
 
@@ -47,12 +49,12 @@ for (const f of readdirSync(WORK).filter((f) => /^in-\d+\.json$/.test(f)).sort()
 // contra o conjunto global de k's (tradutor devolveu lotes mesclados)
 const translations = new Map();
 const errors = [];
-for (const f of readdirSync(WORK).filter((f) => /^out-\w+\.json$/.test(f)).sort()) {
+for (const f of readdirSync(WORK)
+  .filter((f) => /^out-\w+\.json$/.test(f))
+  .sort()) {
   const batch = f.match(/^out-(\d+)\.json$/)?.[1];
   const batchKs = batch
-    ? new Set(
-        JSON.parse(readFileSync(join(WORK, `in-${batch}.json`), "utf8")).map((it) => it.k),
-      )
+    ? new Set(JSON.parse(readFileSync(join(WORK, `in-${batch}.json`), "utf8")).map((it) => it.k))
     : inItems;
   const { t } = JSON.parse(readFileSync(join(WORK, f), "utf8"));
   if (!Array.isArray(t)) throw new Error(`lote ${f}: "t" não é array`);
@@ -62,7 +64,6 @@ for (const f of readdirSync(WORK).filter((f) => /^out-\w+\.json$/.test(f)).sort(
     translations.set(e.k, e);
   }
 }
-
 
 // montagem: tipo → qid → campo → array indexado por posição da frase
 const byType = new Map();
@@ -95,7 +96,8 @@ for (const [k, item] of inItems) {
   if (!byField.has(field)) byField.set(field, []);
   byField.get(field)[index] = { h, l: e.l, c: e.c ?? "" };
 }
-if (errors.length > 0) console.error(`Entradas inválidas (${errors.length}):\n` + errors.join("\n"));
+if (errors.length > 0)
+  console.error(`Entradas inválidas (${errors.length}):\n` + errors.join("\n"));
 
 mkdirSync(OUT, { recursive: true });
 let written = 0;
@@ -124,7 +126,11 @@ for (const [type, byQid] of byType) {
   writeFileSync(file, JSON.stringify(sorted, null, 2) + "\n");
 }
 
-const byPriority = { P1: { total: 0, done: 0 }, P2: { total: 0, done: 0 }, P3: { total: 0, done: 0 } };
+const byPriority = {
+  P1: { total: 0, done: 0 },
+  P2: { total: 0, done: 0 },
+  P3: { total: 0, done: 0 },
+};
 for (const [k] of inItems) {
   const [type, , field] = k.split("|");
   const p = priorityOf(type, field.replace(/\[\d+\]$/, ""));
@@ -133,7 +139,13 @@ for (const [k] of inItems) {
 }
 console.log(
   JSON.stringify(
-    { total: inItems.size, translated: translations.size, missing, writtenNow: written, byPriority },
+    {
+      total: inItems.size,
+      translated: translations.size,
+      missing,
+      writtenNow: written,
+      byPriority,
+    },
     null,
     2,
   ),

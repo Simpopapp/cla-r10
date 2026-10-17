@@ -10,7 +10,9 @@ const ROOT = new URL("../../", import.meta.url).pathname;
 const WORK = join(ROOT, ".opencode/work/plus/words");
 const OUT = join(ROOT, "src/data/plus/glossary.json");
 
-const inFiles = readdirSync(WORK).filter((f) => /^in-\d+\.json$/.test(f)).sort();
+const inFiles = readdirSync(WORK)
+  .filter((f) => /^in-\d+\.json$/.test(f))
+  .sort();
 const inWords = new Set();
 for (const f of inFiles) {
   for (const w of JSON.parse(readFileSync(join(WORK, f), "utf8")).words) inWords.add(w);
@@ -20,7 +22,9 @@ for (const f of inFiles) {
 // contra o conjunto global de candidatas (tradutor devolveu lotes mesclados)
 const translations = new Map();
 let outFiles = 0;
-for (const f of readdirSync(WORK).filter((f) => /^out-\w+\.json$/.test(f)).sort()) {
+for (const f of readdirSync(WORK)
+  .filter((f) => /^out-\w+\.json$/.test(f))
+  .sort()) {
   outFiles++;
   const batch = f.match(/^out-(\d+)\.json$/)?.[1];
   const batchWords = batch
@@ -35,11 +39,11 @@ for (const f of readdirSync(WORK).filter((f) => /^out-\w+\.json$/.test(f)).sort(
   }
 }
 
-
 const INVALID = /(^[^\wáéíóúâêôãõçàü]+|[^\wáéíóúâêôãõçàü]+$)/i;
 function validate(e) {
   const literal = e.literal;
-  if (typeof literal !== "string" || literal.length === 0 || literal.length > 60) return "literal vazio/longo";
+  if (typeof literal !== "string" || literal.length === 0 || literal.length > 60)
+    return "literal vazio/longo";
   if (literal !== literal.toLowerCase()) return "literal não minúsculo";
   if (literal.split(/\s+/).length > 3) return "literal > 3 palavras";
   if (INVALID.test(literal)) return "literal com pontuação externa";
@@ -97,6 +101,8 @@ console.log(
   ),
 );
 if (translations.size / inWords.size < 0.95) {
-  console.error(`Cobertura ${(translations.size / inWords.size).toFixed(3)} < 0,95 — complete os lotes que faltam.`);
+  console.error(
+    `Cobertura ${(translations.size / inWords.size).toFixed(3)} < 0,95 — complete os lotes que faltam.`,
+  );
   process.exitCode = 1;
 }

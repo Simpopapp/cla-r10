@@ -10,7 +10,6 @@ describe("plus words", () => {
       "fine",
       "well-known",
     ]);
-
   });
 
   it("apóstrofo tipográfico vira reto", () => {

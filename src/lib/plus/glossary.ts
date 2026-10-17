@@ -15,7 +15,10 @@ export const GLOSSARY_MISS = "Tradução não disponível";
 
 /** Normaliza a palavra consultada (apóstrofo tipográfico, pontuação externa). */
 function normalizeLookup(word: string): string {
-  return word.replaceAll("\u2019", "'").toLowerCase().replace(/^[^\w'-]+|[^\w'-]+$/g, "");
+  return word
+    .replaceAll("\u2019", "'")
+    .toLowerCase()
+    .replace(/^[^\w'-]+|[^\w'-]+$/g, "");
 }
 
 /** Tradução exata ou null — nunca tradução inventada. */

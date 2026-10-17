@@ -33,9 +33,9 @@ describe("plus settings", () => {
 
   it("normaliza lixo para false (nunca liga por acidente)", () => {
     expect(normalizePlusSettings("sim")).toEqual(DEFAULT_PLUS_SETTINGS);
-    expect(normalizePlusSettings({ wordTranslation: 1, phraseTranslation: "true", plusAudio: null })).toEqual(
-      DEFAULT_PLUS_SETTINGS,
-    );
+    expect(
+      normalizePlusSettings({ wordTranslation: 1, phraseTranslation: "true", plusAudio: null }),
+    ).toEqual(DEFAULT_PLUS_SETTINGS);
     expect(normalizePlusSettings({ wordTranslation: true }).wordTranslation).toBe(true);
   });
 
@@ -45,4 +45,3 @@ describe("plus settings", () => {
     expect(audio?.description).toMatch(/nunca a tradução/i);
   });
 });
-

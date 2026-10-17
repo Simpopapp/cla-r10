@@ -15,7 +15,6 @@ export interface PhraseEntry {
 
 export type PhrasesFile = Record<string, Record<string, (PhraseEntry | null)[]>>;
 
-
 /** Normalização canônica compartilhada com scripts/plus/merge-phrases.mjs. */
 export function normalizeSentenceForHash(s: string): string {
   return s

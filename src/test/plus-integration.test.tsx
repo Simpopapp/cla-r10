@@ -24,7 +24,11 @@ import { PlusWordText } from "@/components/plus/PlusWordText";
 
 afterEach(() => {
   cleanup();
-  mockSettings.current.plus = { wordTranslation: false, phraseTranslation: false, plusAudio: false };
+  mockSettings.current.plus = {
+    wordTranslation: false,
+    phraseTranslation: false,
+    plusAudio: false,
+  };
 });
 
 describe("plus surfaces", () => {
@@ -73,7 +77,9 @@ describe("plus surfaces", () => {
       />,
     );
     fireEvent.click(screen.getByRole("button", { name: /In the future/ }));
-    const card = await screen.findByText("No futuro, as pessoas trabalharão menos horas do que trabalham hoje.");
+    const card = await screen.findByText(
+      "No futuro, as pessoas trabalharão menos horas do que trabalham hoje.",
+    );
     expect(card).toBeDefined();
   });
 

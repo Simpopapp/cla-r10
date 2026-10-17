@@ -11,10 +11,22 @@ export const POLICY = {
     question: { phase: "pre", nativeAudio: true },
     answers: { phase: "post", nativeAudio: false },
   },
-  sgd: { turns: { phase: "pre", nativeAudio: true }, sample: { phase: "post", nativeAudio: false } },
-  rts: { scenario: { phase: "pre", nativeAudio: true }, sample: { phase: "post", nativeAudio: false } },
-  swt: { text: { phase: "pre", nativeAudio: false }, sample: { phase: "post", nativeAudio: false } },
-  write_essay: { prompt: { phase: "pre", nativeAudio: false }, sample: { phase: "post", nativeAudio: false } },
+  sgd: {
+    turns: { phase: "pre", nativeAudio: true },
+    sample: { phase: "post", nativeAudio: false },
+  },
+  rts: {
+    scenario: { phase: "pre", nativeAudio: true },
+    sample: { phase: "post", nativeAudio: false },
+  },
+  swt: {
+    text: { phase: "pre", nativeAudio: false },
+    sample: { phase: "post", nativeAudio: false },
+  },
+  write_essay: {
+    prompt: { phase: "pre", nativeAudio: false },
+    sample: { phase: "post", nativeAudio: false },
+  },
   read_fib_dropdown: { passage: { phase: "pre", nativeAudio: false } },
   read_mcq_multi: {
     passage: { phase: "pre", nativeAudio: false },
@@ -28,7 +40,10 @@ export const POLICY = {
     question: { phase: "pre", nativeAudio: false },
     explanation: { phase: "post", nativeAudio: false },
   },
-  sst: { transcript: { phase: "post", nativeAudio: true }, sample: { phase: "post", nativeAudio: false } },
+  sst: {
+    transcript: { phase: "post", nativeAudio: true },
+    sample: { phase: "post", nativeAudio: false },
+  },
   lst_mcq_multi: {
     transcript: { phase: "post", nativeAudio: true },
     explanation: { phase: "post", nativeAudio: false },
@@ -43,7 +58,10 @@ export const POLICY = {
     explanation: { phase: "post", nativeAudio: false },
   },
   lst_smw: { transcript: { phase: "post", nativeAudio: true } },
-  lst_hiw: { shown: { phase: "pre", nativeAudio: false }, spoken: { phase: "post", nativeAudio: true } },
+  lst_hiw: {
+    shown: { phase: "pre", nativeAudio: false },
+    spoken: { phase: "post", nativeAudio: true },
+  },
   wfd: { sentence: { phase: "post", nativeAudio: true } },
 };
 

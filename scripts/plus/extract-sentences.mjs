@@ -25,7 +25,7 @@ function splitSentences(text) {
       if (ch === "." && /\{\{\d+\}\}$/.test(current)) continue;
       const next = chars[i + 1];
       const isBoundary = next === undefined || next === " " || next === "\n";
-      if (isBoundary && !ABBREVIATIONS.has((/([\w.]+)$/.exec(current))?.[1] ?? "")) {
+      if (isBoundary && !ABBREVIATIONS.has(/([\w.]+)$/.exec(current)?.[1] ?? "")) {
         out.push(current.trim());
         current = "";
       }

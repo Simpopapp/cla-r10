@@ -146,7 +146,9 @@ export function PlusWordText({
                     <div className="mt-1">
                       <p className="text-foreground">{lookup.entry.literal}</p>
                       {lookup.entry.contextual ? (
-                        <p className="mt-1 text-xs text-muted-foreground">{lookup.entry.contextual}</p>
+                        <p className="mt-1 text-xs text-muted-foreground">
+                          {lookup.entry.contextual}
+                        </p>
                       ) : null}
                     </div>
                   ) : (

@@ -7,7 +7,6 @@ const glossary = glossaryJson as Glossary;
 
 const INVALID_ENDS = /[.,;:!?)]$/;
 
-
 describe("plus glossary (invariantes sobre o arquivo real)", () => {
   it("não está vazio", () => {
     expect(Object.keys(glossary).length).toBeGreaterThan(0);
@@ -51,4 +50,3 @@ describe("plus glossary (invariantes sobre o arquivo real)", () => {
     expect(lookupWord(glossary, "palavrquisenaoexiste")).toBeNull();
   });
 });
-

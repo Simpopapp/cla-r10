@@ -4,7 +4,6 @@ import { POLICY as mjsPolicy } from "../../scripts/plus/policy.mjs";
 import { eligibleFields, plusFieldPolicy, plusWordPolicy } from "@/lib/plus/plusAudio";
 import { TASK_TYPES } from "@/lib/pte/types";
 
-
 describe("plus field policy", () => {
   it("chave da resposta nunca aparece antes do resultado", () => {
     // sentence do wfd e transcript de repeat/retell/sst/lst_* só no resultado
@@ -33,9 +32,10 @@ describe("plus field policy", () => {
       for (const rule of eligibleFields(type)) {
         if (!rule.nativeAudio) continue;
         for (const phase of ["pre", "post"] as const) {
-          expect(plusFieldPolicy(type, rule.field, phase).phraseAudio, `${type}.${rule.field}`).toBe(
-            false,
-          );
+          expect(
+            plusFieldPolicy(type, rule.field, phase).phraseAudio,
+            `${type}.${rule.field}`,
+          ).toBe(false);
         }
       }
     }
@@ -60,7 +60,6 @@ describe("plus field policy", () => {
 
   it("matriz do extrator (mjs) está em sincronia com a matriz do app (ts)", () => {
     for (const type of TASK_TYPES) {
-
       const tsFields = eligibleFields(type).sort((a, b) => a.field.localeCompare(b.field));
       const mjsFields = Object.entries(mjsPolicy[type] ?? {})
         .map(([field, rule]) => ({ field, phase: rule.phase, nativeAudio: rule.nativeAudio }))

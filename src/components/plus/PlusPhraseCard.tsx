@@ -100,7 +100,9 @@ export function PlusPhraseCard({
             sentence
           )}
         </button>
-        {policy.phraseAudio ? <PlusSpeakButton text={sentence} label="Pronunciar a frase em inglês" /> : null}
+        {policy.phraseAudio ? (
+          <PlusSpeakButton text={sentence} label="Pronunciar a frase em inglês" />
+        ) : null}
       </span>
       {expanded && policy.phraseTranslation ? (
         <span
@@ -115,7 +117,9 @@ export function PlusPhraseCard({
             <>
               <span className="block text-foreground">{lookup.literal}</span>
               {lookup.contextual ? (
-                <span className="mt-1 block text-xs text-muted-foreground">{lookup.contextual}</span>
+                <span className="mt-1 block text-xs text-muted-foreground">
+                  {lookup.contextual}
+                </span>
               ) : null}
             </>
           )}

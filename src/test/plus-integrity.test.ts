@@ -17,8 +17,6 @@ import answerShortPhrases from "@/data/plus/phrases/answer_short.json";
 import writeEssayBank from "@/data/pte/write_essay.json";
 import swtBank from "@/data/pte/swt.json";
 
-
-
 type PhrasesFile = Record<string, Record<string, { h: string; l: string; c: string }[]>>;
 interface BankItem {
   id: string;
@@ -48,7 +46,6 @@ describe("plus data integrity", () => {
   it.each([
     ["write_essay", writeEssayPhrases as PhrasesFile, writeEssayBank as unknown as BankItem[]],
     ["swt", swtPhrases as PhrasesFile, swtBank as unknown as BankItem[]],
-
   ])("%s: frases apontam para o banco e hashes batem", (type, phrases, bank) => {
     const bankById = new Map(bank.map((q) => [q.id, q]));
     const eligible = new Set(eligibleFields(type as TaskType).map((f) => f.field));
@@ -77,7 +74,6 @@ describe("plus data integrity", () => {
           expect(entry.c.length).toBeLessThanOrEqual(200);
           total++;
         }
-
       }
     }
     expect(total).toBeGreaterThan(0);
@@ -93,6 +89,8 @@ describe("plus data integrity", () => {
 
     expect(TASK_TYPES.length).toBe(22);
     // o manifesto não conhece o pack — contagens independentes
-    expect(Object.keys(manifestJson as unknown as Record<string, unknown>).length).toBeGreaterThan(0);
+    expect(Object.keys(manifestJson as unknown as Record<string, unknown>).length).toBeGreaterThan(
+      0,
+    );
   });
 });

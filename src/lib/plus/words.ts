@@ -9,7 +9,6 @@ export function normalizeWordToken(raw: string): string {
   // pontuação externa ( vírgulas, aspas, hifens soltos… ) sem tocar apóstrofo interno
   const stripped = cleaned.replace(/^[^\w']+|[^\w']+$/g, "");
   return stripped;
-
 }
 
 /** Palavras do texto já normalizadas (minúsculas, sem pontuação externa). */
