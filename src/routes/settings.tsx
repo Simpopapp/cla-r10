@@ -400,12 +400,43 @@ function SettingsPage() {
           </div>
         </Section>
 
-        <Section title="Offline e Studie Plus">
+        <Section title="Studie Plus (extra de estudo)">
           <p className="text-sm text-muted-foreground">
-            O modo offline (baixar seções para estudar sem internet) e o pack “Studie Plus” (extra
-            de estudo, fora do PTE) entram em fases posteriores do plano.
+            Recurso extra de estudo: <strong className="text-foreground">não faz parte do PTE</strong> —
+            não entra na nota, no histórico nem na estimativa. Tudo continua salvo apenas neste
+            navegador.
+          </p>
+          <div className="rounded-lg border border-border bg-muted px-3 py-2 text-sm text-muted-foreground">
+            <p>
+              <strong className="text-foreground">Tradução</strong> = significado em português,
+              escrito na tela.
+            </p>
+            <p className="mt-1">
+              <strong className="text-foreground">Áudio</strong> = pronúncia do inglês original —
+              nunca lê a tradução em voz alta.
+            </p>
+          </div>
+          {PLUS_TOGGLES.map((toggle) => (
+            <div key={toggle.key} className="flex items-center justify-between gap-4">
+              <div>
+                <Label htmlFor={`setting-plus-${toggle.key}`}>{toggle.label}</Label>
+                <p className="text-xs text-muted-foreground">{toggle.description}</p>
+              </div>
+              <Switch
+                id={`setting-plus-${toggle.key}`}
+                checked={settings.plus[toggle.key]}
+                onCheckedChange={(checked) =>
+                  patch({ plus: { ...settings.plus, [toggle.key]: checked } })
+                }
+              />
+            </div>
+          ))}
+          <p className="text-xs text-muted-foreground">
+            O modo offline (baixar seções para estudar sem internet) entra em uma fase posterior do
+            plano.
           </p>
         </Section>
+
 
         <Section title="Privacidade e voz">
           <p className="text-sm text-muted-foreground">
