@@ -62,9 +62,11 @@ describe("plus data integrity", () => {
       for (const [field, entries] of Object.entries(fields)) {
         // campo elegível na matriz (nunca campo fora do pack)
         expect(eligible.has(field), `campo não elegível: ${type}.${field}`).toBe(true);
-        const source = item!.data[field];
+        const source = item!.data[field] as string | string[] | undefined;
         expect(source, `campo ausente no banco: ${qid}.${field}`).toBeTruthy();
-        const sentences = splitSentences(typeof source === "string" ? source : source.join(" "));
+        const text = typeof source === "string" ? source : (source ?? []).join(" ");
+        const sentences = splitSentences(text);
+
         expect(entries.length).toBeLessThanOrEqual(sentences.length);
         for (const [index, entry] of entries.entries()) {
           expect(sentences[index], `índice fora do banco: ${qid}.${field}[${index}]`).toBeDefined();
