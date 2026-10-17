@@ -16,22 +16,25 @@ for (const f of inFiles) {
   for (const w of JSON.parse(readFileSync(join(WORK, f), "utf8")).words) inWords.add(w);
 }
 
-// traduções por lote: out-NNN ↔ in-NNN
+// traduções: out-NNN.json valida contra o lote in-NNN; out-gN.json valida
+// contra o conjunto global de candidatas (tradutor devolveu lotes mesclados)
 const translations = new Map();
 let outFiles = 0;
-for (const f of readdirSync(WORK).filter((f) => /^out-\d+\.json$/.test(f)).sort()) {
+for (const f of readdirSync(WORK).filter((f) => /^out-\w+\.json$/.test(f)).sort()) {
   outFiles++;
-  const batch = f.match(/^out-(\d+)\.json$/)[1];
-  const inFile = join(WORK, `in-${batch}.json`);
-  const batchWords = new Set(JSON.parse(readFileSync(inFile, "utf8")).words);
+  const batch = f.match(/^out-(\d+)\.json$/)?.[1];
+  const batchWords = batch
+    ? new Set(JSON.parse(readFileSync(join(WORK, `in-${batch}.json`), "utf8")).words)
+    : inWords;
   const { t } = JSON.parse(readFileSync(join(WORK, f), "utf8"));
-  if (!Array.isArray(t)) throw new Error(`lote out-${batch}: "t" não é array`);
+  if (!Array.isArray(t)) throw new Error(`lote ${f}: "t" não é array`);
   for (const e of t) {
-    if (!batchWords.has(e.w)) throw new Error(`lote out-${batch}: palavra fora do lote: ${e.w}`);
+    if (!batchWords.has(e.w)) throw new Error(`lote ${f}: palavra fora do lote: ${e.w}`);
     if (translations.has(e.w)) throw new Error(`palavra traduzida 2×: ${e.w}`);
     translations.set(e.w, e);
   }
 }
+
 
 const INVALID = /(^[^\wáéíóúâêôãõçàü]+|[^\wáéíóúâêôãõçàü]+$)/i;
 function validate(e) {
