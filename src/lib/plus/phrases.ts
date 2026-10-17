@@ -1,7 +1,8 @@
 // Pack studie-plus — frases traduzidas por questão (PRD §13.2).
-// src/data/plus/phrases/<tipo>.json: { [qid]: { [campo]: { h, l, c }[] } }
+// src/data/plus/phrases/<tipo>.json: { [qid]: { [campo]: (PhraseEntry|null)[] } }
 // índice = posição em splitSentences(question[campo]);
-// h = hash curto da frase normalizada de origem (detecta tradução obsoleta).
+// h = hash curto da frase normalizada de origem (detecta tradução obsoleta);
+// null = frase sem tradução (estado honesto no card).
 
 export interface PhraseEntry {
   /** hash curto (8 hex) da frase normalizada de origem. */
@@ -12,7 +13,8 @@ export interface PhraseEntry {
   c: string;
 }
 
-export type PhrasesFile = Record<string, Record<string, PhraseEntry[]>>;
+export type PhrasesFile = Record<string, Record<string, (PhraseEntry | null)[]>>;
+
 
 /** Normalização canônica compartilhada com scripts/plus/merge-phrases.mjs. */
 export function normalizeSentenceForHash(s: string): string {
