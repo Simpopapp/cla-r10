@@ -68,12 +68,14 @@ describe("plus data integrity", () => {
         expect(entries.length).toBeLessThanOrEqual(sentences.length);
         for (const [index, entry] of entries.entries()) {
           expect(sentences[index], `índice fora do banco: ${qid}.${field}[${index}]`).toBeDefined();
+          if (entry === null) continue; // frase sem tradução — estado honesto
           expect(entry.h).toBe(hashSentence(sentences[index]!));
           expect(entry.l.length).toBeGreaterThan(0);
           expect(entry.l.length).toBeLessThanOrEqual(400);
           expect(entry.c.length).toBeLessThanOrEqual(200);
           total++;
         }
+
       }
     }
     expect(total).toBeGreaterThan(0);
