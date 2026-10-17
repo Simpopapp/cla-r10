@@ -38,7 +38,7 @@ export function PlusWordText({
   type: TaskType;
   field: string;
   phase: PlusPhase;
-  className?: string;
+  className?: string | undefined;
   /** no simulado o pack não aparece (não faz parte da replicação do PTE) */
   disabled?: boolean | undefined;
 }) {
