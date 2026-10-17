@@ -886,7 +886,11 @@
         "l": "De acordo com um relatório da Agência Internacional de Energia (IEA), as vendas de VEs dobraram em 2023, atingindo um recorde de 10 milhões de unidades em todo o mundo.",
         "c": "A IEA informa que, em 2023, foram vendidos 10 milhões de veículos elétricos, o dobro do ano anterior."
       },
-      null,
+      {
+        "h": "7f92e1a1",
+        "l": "\"O crescimento da adoção de veículos elétricos é um passo crucial para reduzir as emissões de carbono e combater as mudanças climáticas\", disse o Dr. Fatih Birol, Diretor Executivo da IEA.",
+        "c": "A adoção de veículos elétricos é importante para reduzir emissões e combater as mudanças climáticas."
+      },
       {
         "h": "9bd74661",
         "l": "Os governos estão desempenhando um papel fundamental nessa transição ao oferecer incentivos, como reduções de impostos, subsídios e descontos, para encorajar os consumidores a comprar carros elétricos.",
@@ -1236,7 +1240,11 @@
         "l": "Os esforços para melhorar o acesso ao atendimento incluem a expansão dos serviços de telemedicina e a integração do apoio à saúde mental nas escolas.",
         "c": "Entre as soluções estão consultas remotas e suporte psicológico oferecido nas escolas."
       },
-      null,
+      {
+        "h": "cda41927",
+        "l": "\"A saúde mental é tão importante quanto a saúde física, e precisamos garantir que os jovens tenham os recursos e o apoio de que precisam para prosperar\", disse o Dr. Tedros Adhanom Ghebreyesus, Diretor-Geral da WHO.",
+        "c": "Os jovens precisam de apoio e recursos para cuidar da saúde mental."
+      },
       {
         "h": "7a0d5737",
         "l": "“Ao investir em educação e serviços de saúde mental, podemos ajudar os jovens a desenvolver resiliência e levar vidas mais saudáveis e gratificantes.” À medida que aumenta a conscientização sobre a crise de saúde mental, esforços contínuos para enfrentar esses desafios são essenciais para o bem-estar das gerações futuras.",
@@ -1261,7 +1269,11 @@
         "l": "De acordo com um relatório do Banco Mundial, quase 1,6 bilhão de estudantes foram afetados pelo fechamento de escolas no auge da pandemia.",
         "c": "No pior momento da pandemia, o fechamento das escolas atingiu aproximadamente 1,6 bilhão de alunos."
       },
-      null,
+      {
+        "h": "60603e4d",
+        "l": "\"A transição para o ensino on-line tem sido desafiadora, mas também apresenta oportunidades únicas de inovação na educação\", observou a Dra. Ayesha Khan, especialista em políticas educacionais.",
+        "c": "O ensino on-line traz desafios e oportunidades de inovação na educação."
+      },
       {
         "h": "dfcd99c2",
         "l": "Uma grande vantagem do ensino remoto é a possibilidade de acessar uma abundância de recursos digitais e ferramentas interativas que podem aprimorar a experiência de aprendizagem.",
@@ -1419,7 +1431,11 @@
         "l": "Essas migrações foram impulsionadas por vários fatores, incluindo mudanças climáticas, disponibilidade de recursos e dinâmicas sociais.",
         "c": "O clima, os recursos disponíveis e as relações sociais influenciaram os deslocamentos."
       },
-      null,
+      {
+        "h": "93f3e5c0",
+        "l": "\"Compreender as antigas migrações humanas nos ajuda a traçar os caminhos percorridos por nossos ancestrais e a entender como eles se adaptaram a novos ambientes\", disse o Dr. Jean-Jacques Hublin, paleoantropólogo do Max Planck Institute.",
+        "c": "Estudar as migrações antigas ajuda a entender os caminhos e as adaptações dos ancestrais humanos."
+      },
       {
         "h": "63f2ebd8",
         "l": "Uma das principais rotas migratórias levou os primeiros seres humanos ao Oriente Médio e, depois, à Europa e à Ásia.",
@@ -1474,7 +1490,11 @@
         "l": "Os testes em animais têm sido um pilar da pesquisa biomédica por décadas, desempenhando um papel crucial no desenvolvimento de tratamentos para doenças como câncer, diabetes e doenças cardíacas.",
         "c": "Experimentos com animais contribuíram para criar tratamentos médicos ao longo de muitos anos."
       },
-      null,
+      {
+        "h": "335b1ea3",
+        "l": "\"Sem testes em animais, não teríamos muitos dos tratamentos que salvam vidas disponíveis hoje\", disse a Dra. Stefani Androsi, uma importante imunologista.",
+        "c": "Os testes em animais possibilitaram muitos tratamentos que salvam vidas."
+      },
       {
         "h": "3c71830e",
         "l": "Defensores argumentam que modelos animais são essenciais para compreender processos biológicos complexos e garantir a segurança de novos medicamentos antes de serem testados em seres humanos.",
@@ -1667,7 +1687,11 @@
         "l": "Pesquisadores da University of Cambridge descobriram um tipo de vida microbiana até então desconhecido em fontes hidrotermais de águas profundas, o que poderia fornecer pistas cruciais sobre as condições que levaram ao surgimento da vida.",
         "c": "Microrganismos recém-descobertos no fundo do mar podem ajudar a explicar como a vida começou."
       },
-      null,
+      {
+        "h": "cd050150",
+        "l": "\"Esta descoberta abre novas possibilidades para entender como a vida começou em nosso planeta\", disse a Dra. Karen Lloyd, microbiologista envolvida no estudo.",
+        "c": "A descoberta pode ajudar a explicar como a vida começou na Terra."
+      },
       {
         "h": "5afa32b7",
         "l": "Os micróbios, encontrados nos ambientes extremos do fundo do oceano, prosperam em condições de alta pressão e alta temperatura, semelhantes às que se acredita terem existido na Terra primitiva.",
@@ -1693,7 +1717,11 @@
         "l": "A existência de vida em ambientes tão extremos em nosso planeta sugere que condições semelhantes em outros corpos celestes, como os oceanos subterrâneos da lua de Júpiter Europa ou da lua de Saturno Encélado, poderiam potencialmente abrigar vida.",
         "c": "Como há vida em lugares extremos na Terra, também pode haver organismos nos oceanos sob a superfície de Europa e Encélado."
       },
-      null,
+      {
+        "h": "68ebb02e",
+        "l": "\"Se a vida consegue prosperar nas condições extremas das fontes hidrotermais de águas profundas da Terra, isso levanta a possibilidade de que exista vida em outros lugares do nosso sistema solar\", disse a Dra. Lloyd.",
+        "c": "A vida em ambientes extremos da Terra sugere que talvez exista vida em outros lugares do sistema solar."
+      },
       {
         "h": "76341193",
         "l": "À medida que os pesquisadores continuam estudando esses micróbios recém-descobertos, esperam descobrir mais sobre os processos fundamentais que sustentam a vida e sobre a possibilidade de sua existência no universo.",
@@ -1782,7 +1810,11 @@
         "l": "A CTE é uma doença cerebral degenerativa encontrada em indivíduos que sofreram impactos repetidos na cabeça, levando a sintomas como perda de memória, confusão, agressividade e depressão.",
         "c": "Impactos frequentes na cabeça podem causar uma doença progressiva que afeta memória, comportamento e humor."
       },
-      null,
+      {
+        "h": "1f989894",
+        "l": "\"Os riscos associados a traumatismos cranianos repetidos no futebol são evidentes, e precisamos agir para proteger os atletas\", disse a Dra. Amy McPherson, neuropatologista da Boston State University que realizou extensas pesquisas sobre CTE.",
+        "c": "Traumatismos cranianos repetidos no futebol representam riscos e exigem medidas para proteger os atletas."
+      },
       {
         "h": "b81907dd",
         "l": "Estudos recentes revelaram índices alarmantes de CTE entre ex-jogadores profissionais de futebol americano.",
@@ -2014,7 +2046,11 @@
         "l": "Aprovado pela FDA em 2017, Ozempic contém semaglutida, que regula os níveis de açúcar no sangue e o apetite.",
         "c": "Desde 2017, o remédio é autorizado nos Estados Unidos e atua no controle da glicemia e da fome."
       },
-      null,
+      {
+        "h": "752c3ce8",
+        "l": "\"Ozempic transformou o tratamento do diabetes e agora é promissor para o controle do peso\", disse o Dr. John Buse, da University of North Carolina.",
+        "c": "Ozempic mudou o tratamento do diabetes e pode ajudar no controle do peso."
+      },
       {
         "h": "24aab812",
         "l": "Ensaios clínicos mostram que Ozempic pode levar a uma perda de peso significativa, com participantes perdendo até 15% do peso corporal ao longo de um ano.",
@@ -2030,7 +2066,11 @@
         "l": "Ozempic controla o açúcar no sangue e reduz o apetite ao retardar o esvaziamento gástrico e aumentar a sensação de saciedade, ajudando as pessoas a consumir menos calorias sem se sentirem privadas.",
         "c": "O medicamento prolonga a sensação de estômago cheio e, assim, pode ajudar a comer menos."
       },
-      null,
+      {
+        "h": "62735fba",
+        "l": "\"Ozempic oferece uma nova opção para a perda de peso para pessoas com obesidade\", observou a Dra. Donna Ryan, especialista em obesidade.",
+        "c": "Ozempic pode ser uma opção para a perda de peso em pessoas com obesidade."
+      },
       {
         "h": "953faa9c",
         "l": "No entanto, o uso de Ozempic fora das indicações aprovadas para perda de peso gera preocupações.",
@@ -2203,7 +2243,11 @@
         "l": "O aumento das temperaturas, as mudanças nos padrões de precipitação e a maior frequência de eventos climáticos extremos estão prejudicando a produtividade agrícola em todo o mundo.",
         "c": "Calor, alterações nas chuvas e eventos severos estão reduzindo a produção agrícola global."
       },
-      null,
+      {
+        "h": "115fdea0",
+        "l": "\"As mudanças climáticas já estão afetando a produtividade das lavouras e as práticas agrícolas em muitas partes do mundo\", disse a Dra. Cynthia Rosenzweig, cientista sênior do clima na NASA.",
+        "c": "As mudanças climáticas já afetam a produção agrícola e as práticas de cultivo."
+      },
       {
         "h": "351b40ac",
         "l": "“Estamos observando mudanças nas estações de cultivo, maior pressão de pragas e doenças e secas e inundações mais frequentes.” O impacto das mudanças climáticas varia conforme a região.",
@@ -2224,7 +2268,11 @@
         "l": "Por exemplo, culturas básicas como trigo, arroz e milho são altamente sensíveis ao aumento das temperaturas, e estudos preveem quedas significativas na produtividade se as tendências atuais continuarem.",
         "c": "A continuidade do aquecimento pode reduzir bastante a produção de alimentos essenciais."
       },
-      null,
+      {
+        "h": "fee8b36f",
+        "l": "\"Nos trópicos, até pequenos aumentos de temperatura podem levar a quedas substanciais na produtividade das lavouras, agravando a fome e a pobreza\", observou a Dra. Rosenzweig.",
+        "c": "O aquecimento nos trópicos pode reduzir a produtividade agrícola e agravar a fome e a pobreza."
+      },
       {
         "h": "3ec7f563",
         "l": "Os agricultores estão se adaptando a esses desafios por meio de várias estratégias, incluindo a adoção de variedades de culturas resistentes ao clima, técnicas de irrigação aprimoradas e práticas agrícolas sustentáveis.",
@@ -2264,7 +2312,11 @@
         "l": "Descobertas recentes estão lançando nova luz sobre como nossos antepassados viviam, trabalhavam e interagiam com seus ambientes.",
         "c": "Novas evidências ajudam a reconstruir o cotidiano e a relação com a natureza de sociedades antigas."
       },
-      null,
+      {
+        "h": "81fe913e",
+        "l": "\"Cada descoberta arqueológica acrescenta uma peça ao complexo quebra-cabeça do nosso passado\", disse a Dra. Sarah Parcak, renomada arqueóloga e professora da University of Alabama at Birmingham.",
+        "c": "Cada descoberta arqueológica contribui para compreender o passado."
+      },
       {
         "h": "2c098c80",
         "l": "“Essas descobertas nos permitem entender a evolução das sociedades e sua adaptação a condições em mudança.” Uma das descobertas recentes mais revolucionárias é a desenterrada de uma vasta cidade bem preservada sob as areias de Luxor, no Egito.",
@@ -2280,7 +2332,11 @@
         "l": "Arqueólogos encontraram casas, oficinas e artefatos que oferecem um vislumbre da vida cotidiana durante um dos períodos mais prósperos do antigo Egito.",
         "c": "Os vestígios mostram como as pessoas viviam em uma época de grande prosperidade egípcia."
       },
-      null,
+      {
+        "h": "bed2f172",
+        "l": "\"Esta cidade é uma cápsula do tempo, oferecendo uma janela única para a vida dos egípcios comuns\", disse o Dr. Zahi Hawass, eminente egiptólogo envolvido na escavação.",
+        "c": "A cidade permite conhecer de perto como viviam os egípcios comuns."
+      },
       {
         "h": "337c683d",
         "l": "“O nível de preservação é extraordinário, e levará anos para compreender plenamente sua importância.” Os avanços tecnológicos estão desempenhando um papel crucial na arqueologia moderna.",
@@ -2291,7 +2347,11 @@
         "l": "Técnicas como imagens de satélite, radar de penetração no solo e análise de DNA permitem que pesquisadores localizem e estudem sítios com precisão sem precedentes.",
         "c": "Ferramentas modernas ajudam a encontrar e examinar locais arqueológicos com grande exatidão."
       },
-      null
+      {
+        "h": "d5ac9fc4",
+        "l": "\"A tecnologia está revolucionando a arqueologia, permitindo descobrir e analisar sítios de maneiras antes inimagináveis\", disse a Dra. Parcak.",
+        "c": "A tecnologia permite descobrir e estudar sítios arqueológicos de novas maneiras."
+      }
     ]
   },
   "goarno-swt-141": {
@@ -2341,7 +2401,11 @@
         "l": "Esse senso de comunidade é especialmente importante nas cidades, onde o isolamento social pode ser comum.",
         "c": "Em áreas urbanas, esses laços ajudam a combater a solidão."
       },
-      null,
+      {
+        "h": "3b46a88f",
+        "l": "\"As hortas comunitárias derrubam barreiras e aproximam os vizinhos\", disse a Dra. Laura Lawson, professora de arquitetura paisagística na Rutgers University.",
+        "c": "As hortas comunitárias ajudam a unir os vizinhos."
+      },
       {
         "h": "4c1d8a4a",
         "l": "“Elas criam um espaço compartilhado onde todos podem contribuir e se beneficiar.”",
@@ -2528,7 +2592,11 @@
         "l": "A troca de bens, ideias e práticas entre países promove a diversidade cultural e a inovação, mas também pode levar à erosão de costumes e identidades tradicionais.",
         "c": "O comércio entre países pode enriquecer culturas e estimular novidades, mas também enfraquecer tradições."
       },
-      null,
+      {
+        "h": "9b438c09",
+        "l": "\"O comércio global tem o poder de enriquecer culturas por meio do intercâmbio de diversos bens e ideias\", disse o Dr. Amartya Sen, economista laureado com o Prêmio Nobel.",
+        "c": "O comércio global pode enriquecer culturas ao promover o intercâmbio de bens e ideias."
+      },
       {
         "h": "7d09895e",
         "l": "“No entanto, também apresenta desafios para a preservação cultural.” Um dos benefícios significativos do comércio global é a introdução de novos produtos e tecnologias que melhoram a vida cotidiana.",
@@ -2554,7 +2622,11 @@
         "l": "A cultura popular de Hollywood, Bollywood e K-pop tem um público global, influenciando tendências da moda, entretenimento e escolhas de estilo de vida.",
         "c": "Produções culturais de diferentes lugares influenciam hábitos e tendências em todo o planeta."
       },
-      null,
+      {
+        "h": "5fe82b09",
+        "l": "\"Produtos culturais que circulam pelas redes do comércio global criam experiências e compreensão compartilhadas entre populações diversas\", comentou o Dr. Sen.",
+        "c": "A circulação global de produtos culturais pode criar experiências e compreensão compartilhadas."
+      },
       {
         "h": "94a554f1",
         "l": "No entanto, a influência do comércio global sobre as culturas locais não está isenta de desvantagens.",
@@ -2589,7 +2661,11 @@
         "l": "Embora o turismo possa impulsionar o crescimento econômico e aumentar a conscientização sobre a conservação, ele frequentemente ameaça ecossistemas e a vida selvagem.",
         "c": "O turismo gera renda e pode promover a conservação, mas também coloca a natureza em risco."
       },
-      null,
+      {
+        "h": "94cd9e5d",
+        "l": "\"O turismo é uma faca de dois gumes\", explicou a Dra. Martha Honey, cofundadora do Center for Responsible Travel.",
+        "c": "O turismo pode trazer benefícios, mas também consequências negativas."
+      },
       {
         "h": "bba75505",
         "l": "“Ele gera receitas muito necessárias, mas também pode levar à destruição de habitats e à perda de biodiversidade se não for administrado adequadamente.” O turismo afeta os habitats naturais principalmente por meio da degradação física.",
@@ -2605,7 +2681,11 @@
         "l": "Destinos populares como recifes de coral e parques nacionais sofrem com o uso excessivo.",
         "c": "A visitação intensa prejudica locais naturais muito procurados."
       },
-      null,
+      {
+        "h": "53910fb2",
+        "l": "\"Observamos um estresse ambiental significativo em lugares como a Great Barrier Reef e Machu Picchu devido ao grande número de turistas\", observou a Dra. Honey.",
+        "c": "O grande número de turistas causa estresse ambiental em locais como a Great Barrier Reef e Machu Picchu."
+      },
       {
         "h": "fd22540c",
         "l": "A perturbação da vida selvagem é outra questão crítica.",
@@ -2616,7 +2696,11 @@
         "l": "Atividades como safáris, mergulho e caminhadas podem perturbar os comportamentos dos animais, levando ao estresse e à diminuição das populações.",
         "c": "A presença de turistas pode alterar hábitos dos animais e reduzir suas populações."
       },
-      null,
+      {
+        "h": "96278c8c",
+        "l": "\"O tráfego frequente de barcos prejudica a vida marinha, enquanto a poluição sonora dos veículos turísticos perturba os animais terrestres\", disse a Dra. Jane Smart, Diretora Global do IUCN Biodiversity Conservation Group.",
+        "c": "O tráfego de barcos e o ruído dos veículos turísticos prejudicam a vida selvagem."
+      },
       {
         "h": "b008ae24",
         "l": "Apesar desses desafios, práticas de turismo sustentável podem atenuar os impactos negativos.",
@@ -2632,7 +2716,11 @@
         "l": "Isso inclui limitar o número de visitantes, usar infraestrutura ecológica e envolver comunidades locais na gestão do turismo.",
         "c": "Entre as medidas estão controlar o fluxo de turistas e incluir moradores nas decisões."
       },
-      null,
+      {
+        "h": "cf2edbc5",
+        "l": "\"O turismo sustentável equilibra os benefícios econômicos com a proteção ambiental\", explicou a Dra. Smart.",
+        "c": "O turismo sustentável concilia ganhos econômicos com a proteção do meio ambiente."
+      },
       {
         "h": "92b96c4c",
         "l": "“Isso garante que o turismo apoie os objetivos de conservação.”",
@@ -2687,7 +2775,11 @@
         "l": "Muitos funcionários acham difícil “desligar” e, como resultado, sofrem de esgotamento.",
         "c": "A dificuldade de parar de trabalhar pode causar burnout."
       },
-      null
+      {
+        "h": "bc6b3827",
+        "l": "\"A cultura do trabalho digital sempre conectado pode ser prejudicial à saúde mental se não for bem administrada\", alertou a Dra. Anne Helen Petersen, autora e especialista em cultura do trabalho.",
+        "c": "Estar sempre conectado ao trabalho pode prejudicar a saúde mental."
+      }
     ]
   },
   "goarno-swt-148": {
@@ -2702,7 +2794,11 @@
         "l": "Encontrada no café, no chá, em refrigerantes e em bebidas energéticas, a cafeína é um elemento básico da rotina diária de muitas pessoas.",
         "c": "Muita gente consome cafeína diariamente por meio de bebidas comuns."
       },
-      null,
+      {
+        "h": "f27fa127",
+        "l": "\"A cafeína ajuda a melhorar o estado de alerta e a concentração, tornando-se uma escolha popular para aumentar a produtividade\", disse a Dra. Laura Juliano, pesquisadora de cafeína e professora de psicologia na American University.",
+        "c": "A cafeína pode aumentar o estado de alerta, a concentração e a produtividade."
+      },
       {
         "h": "30baf550",
         "l": "Os benefícios do consumo de cafeína vão além do estado de alerta mental.",
@@ -2718,7 +2814,11 @@
         "l": "Além disso, a cafeína foi associada a vários benefícios para a saúde, como um risco reduzido de certas doenças, incluindo a doença de Parkinson e o diabetes tipo 2.",
         "c": "Pesquisas relacionam a cafeína a menor probabilidade de algumas doenças."
       },
-      null,
+      {
+        "h": "4d9a2794",
+        "l": "\"O consumo moderado de cafeína pode fazer parte de um estilo de vida saudável\", observou a Dra. Juliano.",
+        "c": "Consumir cafeína com moderação pode ser compatível com um estilo de vida saudável."
+      },
       {
         "h": "074dfb68",
         "l": "“Ela tem efeitos protetores contra várias doenças crônicas.” No entanto, o consumo excessivo de cafeína pode levar a efeitos adversos.",
@@ -2734,7 +2834,11 @@
         "l": "Algumas pessoas também podem apresentar sintomas de abstinência, como dores de cabeça e irritabilidade, se pararem repentinamente de consumir cafeína.",
         "c": "Interromper o consumo de uma hora para outra pode causar desconfortos como cefaleia e irritação."
       },
-      null,
+      {
+        "h": "98226c7c",
+        "l": "\"É importante prestar atenção à sua ingestão de cafeína e entender como seu corpo reage a ela\", alertou o Dr. Roland Griffiths, professor de psiquiatria e neurociência na Johns Hopkins University.",
+        "c": "É importante monitorar o consumo de cafeína e observar seus efeitos no corpo."
+      },
       {
         "h": "8dc18450",
         "l": "“Os níveis de tolerância de cada pessoa são diferentes, e o que funciona para uma pode não ser adequado para outra.”",
@@ -2754,7 +2858,11 @@
         "l": "Esses cabos submarinos, que se estendem por milhares de quilômetros pelo fundo dos oceanos, transportam quase 99% do tráfego internacional de dados, incluindo chamadas telefônicas, navegação na internet e transações financeiras.",
         "c": "Quase todas as comunicações digitais internacionais dependem de cabos instalados no leito oceânico."
       },
-      null,
+      {
+        "h": "091acb2e",
+        "l": "\"Os cabos submarinos são os heróis anônimos da era digital, conectando o mundo com velocidade e confiabilidade sem precedentes\", disse a Dra. Nicole Starosielski, especialista na infraestrutura global da internet.",
+        "c": "Os cabos submarinos conectam o mundo com alta velocidade e confiabilidade."
+      },
       {
         "h": "eb206436",
         "l": "A importância desses cabos não pode ser exagerada.",
@@ -2809,7 +2917,11 @@
         "l": "Apesar de suas condições rigorosas, a Antártida fornece dados inestimáveis que ajudam os cientistas a entender padrões climáticos globais, glaciologia e ecossistemas marinhos.",
         "c": "Mesmo sendo inóspita, a região oferece informações valiosas sobre clima, geleiras e vida marinha."
       },
-      null,
+      {
+        "h": "8cd02aa3",
+        "l": "\"A Antártida é como um enorme laboratório\", disse o Dr. Ted Scambos, cientista pesquisador sênior do National Snow and Ice Data Center.",
+        "c": "A Antártida funciona como um vasto laboratório de pesquisa."
+      },
       {
         "h": "5fd6bb83",
         "l": "“Os dados que coletamos aqui são cruciais para entender os impactos das mudanças climáticas.” Uma das principais preocupações em relação à Antártida é o rápido derretimento de suas camadas de gelo.",
@@ -2820,7 +2932,11 @@
         "l": "Observações por satélite mostraram que a perda de gelo do continente aumentou drasticamente nas últimas décadas, contribuindo para a elevação do nível do mar.",
         "c": "Satélites registram mais perda de gelo na Antártida, o que faz os oceanos subirem."
       },
-      null,
+      {
+        "h": "a4eea3a7",
+        "l": "\"As camadas de gelo da Antártida contêm água suficiente para elevar o nível global do mar em vários metros\", observou o Dr. Scambos.",
+        "c": "O derretimento das camadas de gelo antárticas poderia elevar o nível do mar em vários metros."
+      },
       {
         "h": "611f472e",
         "l": "“Mesmo pequenas mudanças no volume de gelo podem ter implicações significativas para comunidades costeiras em todo o mundo.” Estações de pesquisa em toda a Antártida estão na linha de frente do estudo dessas mudanças.",
@@ -2836,7 +2952,11 @@
         "l": "Por exemplo, o British Antarctic Survey vem realizando estudos de longo prazo na Península Antártica, uma das regiões que aquecem mais rapidamente na Terra.",
         "c": "Pesquisadores britânicos acompanham há muito tempo o rápido aquecimento da península."
       },
-      null,
+      {
+        "h": "67c5e978",
+        "l": "\"Nossa pesquisa é fundamental para prever cenários climáticos futuros e orientar políticas globais\", disse a Dra. Jane Francis, diretora do British Antarctic Survey.",
+        "c": "A pesquisa ajuda a prever cenários climáticos e a orientar políticas globais."
+      },
       {
         "h": "fa415ee0",
         "l": "A Antártida é governada por um sistema de tratados internacionais que promove a cooperação científica pacífica e a proteção ambiental.",
@@ -2852,7 +2972,11 @@
         "l": "Esse tratado foi crucial para preservar o ambiente intocado da Antártida e facilitar esforços internacionais de pesquisa.",
         "c": "O acordo protege a natureza antártica e viabiliza pesquisas conjuntas."
       },
-      null,
+      {
+        "h": "611ee5b6",
+        "l": "\"O Tratado da Antártida é um modelo de cooperação internacional\", enfatizou a Dra. Francis.",
+        "c": "O Tratado da Antártida é um exemplo de cooperação entre países."
+      },
       {
         "h": "73ec96c6",
         "l": "“Ele mostra como as nações podem trabalhar juntas para proteger e estudar um patrimônio comum.”",
