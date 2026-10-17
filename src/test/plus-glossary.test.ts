@@ -1,5 +1,3 @@
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 
 import glossaryJson from "@/data/plus/glossary.json";
@@ -8,6 +6,7 @@ import { lookupWord, type Glossary } from "@/lib/plus/glossary";
 const glossary = glossaryJson as Glossary;
 
 const INVALID_ENDS = /[.,;:!?)]$/;
+
 
 describe("plus glossary (invariantes sobre o arquivo real)", () => {
   it("não está vazio", () => {
@@ -51,19 +50,5 @@ describe("plus glossary (invariantes sobre o arquivo real)", () => {
     expect(lookupWord(glossary, `${word},`)).toEqual(lookupWord(glossary, word));
     expect(lookupWord(glossary, "palavrquisenaoexiste")).toBeNull();
   });
-
-  it("candidatas do pipeline traduzidas ≥ 95% (lotes em disco)", () => {
-    const workDir = join(process.cwd(), ".opencode/work/plus/words");
-    let candidates = 0;
-    try {
-      const files = readFileSync(join(workDir, "..", "words"));
-      void files;
-    } catch {
-      // diretório pode não existir fora do sandbox de dev
-    }
-    void candidates;
-    // verificação real de cobertura vive em scripts/plus/merge-glossary.mjs (gate);
-    // aqui garantimos apenas que o arquivo não está vazio e coerente.
-    expect(Object.keys(glossary).length).toBeGreaterThan(0);
-  });
 });
+
