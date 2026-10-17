@@ -84,26 +84,44 @@ export function PlusPhraseCard({
   return (
     <span className="block">
       <span className="flex items-start justify-between gap-2">
-        <button
-          type="button"
-          data-plus-phrase
-          className="flex-1 rounded text-left underline decoration-dotted decoration-muted-foreground/60 underline-offset-4"
-          aria-expanded={expanded}
-          onClick={(event) => {
-            event.stopPropagation();
-            if (policy.phraseTranslation) setExpanded((v) => !v);
-          }}
-        >
-          {wordBubbles ? (
-            <PlusWordText text={sentence} type={type} field={field} phase={phase} />
-          ) : (
-            sentence
-          )}
-        </button>
+        {wordBubbles ? (
+          // botões não se aninham: palavras tocáveis ficam FORA do gatilho da frase
+          <PlusWordText text={sentence} type={type} field={field} phase={phase} />
+        ) : (
+          <button
+            type="button"
+            data-plus-phrase
+            className="flex-1 rounded text-left underline decoration-dotted decoration-muted-foreground/60 underline-offset-4"
+            aria-expanded={expanded}
+            onClick={(event) => {
+              event.stopPropagation();
+              if (policy.phraseTranslation) setExpanded((v) => !v);
+            }}
+          >
+            {sentence}
+          </button>
+        )}
+        {policy.phraseTranslation ? (
+          <button
+            type="button"
+            data-plus-phrase
+            aria-expanded={expanded}
+            aria-label="Traduzir a frase"
+            title="Traduzir a frase"
+            className="inline-flex h-9 shrink-0 items-center rounded-full border border-border bg-card px-3 text-xs text-muted-foreground hover:bg-muted"
+            onClick={(event) => {
+              event.stopPropagation();
+              setExpanded((v) => !v);
+            }}
+          >
+            tradução
+          </button>
+        ) : null}
         {policy.phraseAudio ? (
           <PlusSpeakButton text={sentence} label="Pronunciar a frase em inglês" />
         ) : null}
       </span>
+
       {expanded && policy.phraseTranslation ? (
         <span
           data-plus-phrase-card
