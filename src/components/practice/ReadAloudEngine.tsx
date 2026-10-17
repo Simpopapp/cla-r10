@@ -9,6 +9,7 @@ import { SpeakingControls } from "./SpeakingControls";
 import type { EngineProps } from "./engine";
 import { Button } from "@/components/ui/button";
 import { TtsVoiceNote } from "./TtsVoiceNote";
+import { PlusText } from "@/components/plus/PlusText";
 import { useAppState } from "@/lib/useAppState";
 import { useSpeakingAttempt } from "@/lib/useSpeakingAttempt";
 import { useSpeechSynthesis } from "@/lib/useSpeechSynthesis";
@@ -94,7 +95,15 @@ export function ReadAloudEngine({
 
   return (
     <div>
-      <p className="font-serif text-xl leading-relaxed text-foreground sm:text-2xl">{data.text}</p>
+      <p className="font-serif text-xl leading-relaxed text-foreground sm:text-2xl">
+        <PlusText
+          text={data.text}
+          type="read_aloud"
+          field="text"
+          phase="pre"
+          disabled={mode === "exam"}
+        />
+      </p>
       {!submitted && mode !== "exam" ? (
         <div className="mt-3 flex flex-wrap items-center gap-2">
           <Button

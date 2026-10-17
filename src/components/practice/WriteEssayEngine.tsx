@@ -4,6 +4,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
+import { PlusText } from "@/components/plus/PlusText";
 import type { EngineProps } from "./engine";
 import { WordCountZone } from "./WordCountZone";
 import { Button } from "@/components/ui/button";
@@ -67,7 +68,15 @@ export function WriteEssayEngine({
 
   return (
     <div>
-      <p className="text-lg leading-relaxed text-foreground">{data.prompt}</p>
+      <p className="text-lg leading-relaxed text-foreground">
+        <PlusText
+          text={data.prompt}
+          type="write_essay"
+          field="prompt"
+          phase="pre"
+          qid={question.id}
+        />
+      </p>
       <div className="mt-4">
         <WordCountZone
           value={text}

@@ -43,9 +43,13 @@ Gates padrão: vitest verde · tsgo limpo · build OK · lint 0 erros · preview
   - Checklist Pearson: 22 contagens e 65 itens de referência conferidos no relatório pp.5–6, não contagem garantida (aproximadamente 65 / guia 65–75); ordem atual SGD→RTS prevalece sobre ordem divergente do relatório. RA 35/40 é aproximação; DI 25/40, RL 10/40, SGD 10/120, RTS 10/40, RS 15, ASQ 10, SWT 600, essay 1200 confirmados; Reading/Listening usam alocações por item aproximadas. URLs e limites no status.
   - Gates: vitest 277/277 (+2: membership dos 12 tipos e claim-não-arma-prazo) · tsgo limpo · build OK · lint 0 erros (9 warnings pré-existentes) · Playwright mini-simulado: RA preparação→resposta, RS espera com "—"/envio bloqueado, prazo arma após o áudio (0:14), describe_image imediato, console limpo, desktop 1280 · zero deps de runtime novas · nenhum arquivo gerado editado · parecer do monitor solicitado (pendente).
 - [ ] Fase 8 (P1) — Pack studie-plus
-  - [ ] Seção em Ajustes · `src/lib/plus/*` · `PlusWordText`/`PlusPhraseCard`/`PlusSpeakButton` · integração por `plusFieldPolicy` · mobile-first antes do áudio (áudio por último)
+  - [x] Seção em Ajustes · `src/lib/plus/*` · `PlusWordText`/`PlusPhraseCard`/`PlusSpeakButton` · integração por `plusFieldPolicy` · mobile-first antes do áudio (áudio por último)
+  - [x] Correção de aninhamento: com bolhas ativas o card não envolve a frase em `<button>` (HTML descartaria botões aninhados) — palavras fora do gatilho, expansão da frase por chip "tradução" dedicado (`PlusPhraseCard`)
   - [ ] Dados por subagentes em lotes: `glossary.json` (≥ 95% das candidatas) · `phrases/<tipo>.json` (P1 100%, P2 ≥ 95%, hash `h`) · merges determinísticos · registrar cobertura aqui
+  - Cobertura até aqui: P1 (frases) 100% — swt 588 + write_essay 177, realinhadas após correção do splitter (31 retraduzidas); glossário 1.157 entradas dos 1.200 candidatos do tranche de alta frequência (72,17% de todas as ocorrências; teto de 1.200 registrado como desvio honesto, P2/P3 pendentes)
   - Gates: 8 combinações de toggles · zero fala pt-BR · zero vazamento antes do resultado · balão/card só por toque em 390×844 · pack desligado = regressão zero
+  - Gates parciais rodados (2026-10-17): vitest 315/315 · tsgo limpo · build OK · lint 0 erros (9 warnings) · E2E no preview: ajustes persistem, balão "future → futuro" + 🔊, chip "tradução" abre card, swt 198 palavras tocáveis + 10 chips, zero pageerrors
+
 - [ ] Fase 9 (P1) — Offline real e governança de métricas
   - [ ] `sw.js` versionado + aviso de nova versão · "Baixar para offline" por seção/tipo · `webmanifest` derivado · `head()`/textos derivados · `metrics-sync.test.ts`
   - Gates: E2E offline em build de produção (tipo nunca visitado) · nova versão avisada · sanidade do `metrics-sync` (literal inserido falha) · bundle medido

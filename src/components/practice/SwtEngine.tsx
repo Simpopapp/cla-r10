@@ -4,6 +4,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
+import { PlusText } from "@/components/plus/PlusText";
 import type { EngineProps } from "./engine";
 import { WordCountZone } from "./WordCountZone";
 import { Button } from "@/components/ui/button";
@@ -62,7 +63,9 @@ export function SwtEngine({ question, onSubmit, submitted, registerAutoSubmit }:
 
   return (
     <div>
-      <p className="text-lg leading-relaxed text-foreground">{data.text}</p>
+      <p className="text-lg leading-relaxed text-foreground">
+        <PlusText text={data.text} type="swt" field="text" phase="pre" qid={question.id} />
+      </p>
       <div className="mt-4">
         <WordCountZone
           value={text}

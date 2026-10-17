@@ -4,6 +4,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
+import { PlusText } from "@/components/plus/PlusText";
 import { buildSpeakingResult } from "./speakingResult";
 import { SpeakingControls } from "./SpeakingControls";
 import type { EngineProps } from "./engine";
@@ -78,7 +79,9 @@ export function RtsEngine({ question, onSubmit, submitted, registerAutoSubmit }:
 
   return (
     <div>
-      <p className="text-base leading-relaxed text-foreground sm:text-lg">{data.scenario}</p>
+      <p className="text-base leading-relaxed text-foreground sm:text-lg">
+        <PlusText text={data.scenario} type="rts" field="scenario" phase="pre" qid={question.id} />
+      </p>
       {!submitted ? (
         <div className="mt-3 flex flex-wrap items-center gap-2">
           <Button
