@@ -13,8 +13,10 @@ import manifestJson from "@/data/pte/manifest.json";
 import glossaryJson from "@/data/plus/glossary.json";
 import writeEssayPhrases from "@/data/plus/phrases/write_essay.json";
 import sstPhrases from "@/data/plus/phrases/sst.json";
+import answerShortPhrases from "@/data/plus/phrases/answer_short.json";
 import writeEssayBank from "@/data/pte/write_essay.json";
 import sstBank from "@/data/pte/sst.json";
+
 
 type PhrasesFile = Record<string, Record<string, { h: string; l: string; c: string }[]>>;
 interface BankItem {
@@ -78,10 +80,11 @@ describe("plus data integrity", () => {
   it("nenhum campo com gabarito recebe dados de frase (vazamento impossível)", () => {
     // answer_short answers e wfd sentence são pós-resposta: só entram via
     // policy (post) — e nenhum arquivo de frases deve carregar campo 'answers'
-    const answerShort = require("@/data/plus/phrases/answer_short.json") as PhrasesFile;
+    const answerShort = answerShortPhrases as PhrasesFile;
     for (const fields of Object.values(answerShort)) {
       expect(fields["answers"]).toBeUndefined();
     }
+
     expect(TASK_TYPES.length).toBe(22);
     // o manifesto não conhece o pack — contagens independentes
     expect(Object.keys(manifestJson as unknown as Record<string, unknown>).length).toBeGreaterThan(0);
