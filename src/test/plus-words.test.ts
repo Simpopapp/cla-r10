@@ -3,14 +3,14 @@ import { describe, expect, it } from "vitest";
 import { normalizeWordToken, splitWords } from "@/lib/plus/words";
 
 describe("plus words", () => {
-  it("tokeniza, minúsculas e sem pontuação externa", () => {
+  it("tokeniza, minúsculas e sem pontuação externa (contrações ficam fora — sem entrada no glossário)", () => {
     expect(splitWords("Hello, world! It's fine — well-known.")).toEqual([
       "hello",
       "world",
-      "it's",
       "fine",
       "well-known",
     ]);
+
   });
 
   it("apóstrofo tipográfico vira reto", () => {
